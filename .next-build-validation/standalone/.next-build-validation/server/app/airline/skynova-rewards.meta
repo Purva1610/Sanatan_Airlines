@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/skynova-rewards/layout,_N_T_/airline/skynova-rewards/page,_N_T_/airline/skynova-rewards"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/skynova-rewards/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/b993c0acecfdacacfa942493764ccd49ad9539833766657a72e1e94bad208f2b/$/airline/skynova-rewards",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/skynova-rewards/page"
+    },
+    "isFallback": false
+  }
+}

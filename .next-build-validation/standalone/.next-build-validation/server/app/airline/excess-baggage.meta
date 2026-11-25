@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/excess-baggage/layout,_N_T_/airline/excess-baggage/page,_N_T_/airline/excess-baggage"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/excess-baggage/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/b9600e485ddebc5c841dcb614deaef55bee9fc56e5f4ece409c95a250ab65366/$/airline/excess-baggage",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/excess-baggage/page"
+    },
+    "isFallback": false
+  }
+}

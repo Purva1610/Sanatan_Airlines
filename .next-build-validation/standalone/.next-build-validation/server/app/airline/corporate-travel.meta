@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/corporate-travel/layout,_N_T_/airline/corporate-travel/page,_N_T_/airline/corporate-travel"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/corporate-travel/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/b82f48afc348a583f534f990bb317e191cfd3164540e92500e993d69b20fba2b/$/airline/corporate-travel",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/corporate-travel/page"
+    },
+    "isFallback": false
+  }
+}

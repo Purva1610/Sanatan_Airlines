@@ -1,0 +1,342 @@
+/* ==========================================================================
+   Sanatan — Flagship airline patterns
+   --------------------------------------------------------------------------
+   Patterns common to the world's premium carriers, re-expressed in Sanatan's
+   own orange × royal-blue identity (no third-party branding is reproduced):
+     · transparent header over cinematic heroes, solid on scroll
+     · refined mega-menu
+     · segmented booking widget
+     · boarding-pass offer cards
+     · bento destination grid with explore arrows
+     · photo-led cabin cards
+     · metallic loyalty-tier cards
+     · editorial newsroom cards
+     · animated flight path across the hero
+     · swipeable card rows on mobile
+   Visual only — page content is unchanged. Loaded after skins.css.
+   ========================================================================== */
+
+@keyframes fl-drop { from { opacity: 0; translate: 0 -10px; } to { opacity: 1; translate: 0 0; } }
+@keyframes fl-fly {
+  0% { offset-distance: 0%; opacity: 0; }
+  8% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}
+@keyframes fl-dash { to { background-position: -320px 0; } }
+@keyframes fl-sheen { from { transform: translateX(-120%) skewX(-20deg); } to { transform: translateX(220%) skewX(-20deg); } }
+
+/* ==========================================================================
+   1. TRANSPARENT HEADER OVER DARK HEROES
+   ========================================================================== */
+body:has(:is(.skin:is([data-hero="cinema"], [data-hero="split"], [data-hero="saffron"], [data-hero="mosaic"], [data-hero="orbit"]) main > .al-hero:first-child, main > .sa-hero:first-child)) .p-header {
+  margin-bottom: -66px;
+  transition: background 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s, border-color 0.45s;
+}
+.skin:is([data-hero="cinema"], [data-hero="split"], [data-hero="saffron"], [data-hero="mosaic"], [data-hero="orbit"]) main > .al-hero:first-child { padding-top: 66px; }
+
+html:not(.is-scrolled) body:has(.skin:is([data-hero="cinema"], [data-hero="split"], [data-hero="saffron"], [data-hero="mosaic"], [data-hero="orbit"]) main > .al-hero:first-child) {
+  & .p-header {
+    background: linear-gradient(180deg, rgba(11, 18, 59, 0.55), rgba(11, 18, 59, 0)) !important;
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+    box-shadow: none !important;
+    border-bottom-color: rgba(255, 255, 255, 0.14) !important;
+  }
+  & .p-header::after { opacity: 0; }
+  & .p-header .p-nav-btn { color: #fff !important; background: transparent !important; }
+  & .p-header .p-nav-btn:hover, & .p-header .p-nav-btn[aria-expanded="true"] { background: rgba(255, 255, 255, 0.14) !important; }
+  & .p-header .p-nav-btn svg { color: currentColor !important; }
+  & .p-header .p-brand div > div:first-child { color: #fff !important; }
+  & .p-header .p-brand div > div:last-child { color: rgba(255, 255, 255, 0.7) !important; }
+  & .p-header .p-cta-ghost { color: #fff !important; background: rgba(255, 255, 255, 0.08) !important; border-color: rgba(255, 255, 255, 0.5) !important; }
+  & .p-header .al-hamburger { color: #fff !important; }
+}
+
+/* Hero compositions re-centred to account for the header now overlaying them */
+@media (min-width: 901px) {
+  .skin[data-hero="split"] main > .al-hero:first-child .al-hero-bg { top: 94px; }
+  .skin[data-hero="mosaic"] main > .al-hero:first-child .al-hero-bg { top: 126px; }
+  .skin[data-hero="orbit"] main > .al-hero:first-child :is(.al-hero-bg) { translate: 0 33px; }
+  .skin[data-hero="orbit"] main > .al-hero:first-child::before,
+  .skin[data-hero="orbit"] main > .al-hero:first-child::after { translate: 0 33px; }
+}
+
+/* ==========================================================================
+   2. MEGA-MENU
+   ========================================================================== */
+/* Anchor panels to the whole nav bar (not the clicked item) so they never run off-screen */
+.p-header nav[aria-label="Main navigation"] > div { position: static !important; }
+.p-mega {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  max-width: calc(100vw - 32px);
+  margin-top: 18px;
+  border-radius: 22px !important;
+  border-top: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 40px 90px -30px rgba(14, 22, 73, 0.4), 0 0 0 1px rgba(36, 56, 187, 0.07) !important;
+  animation: fl-drop 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.p-mega::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, #c0480c, #d6500e 45%, #2940d6);
+}
+.p-mega a {
+  border-radius: 10px !important;
+  margin: 0 -10px;
+  padding: 7px 10px !important;
+  transition: background-color 0.25s, color 0.2s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.p-mega a:hover { background: #faf7f1; transform: translateX(4px); }
+
+/* ==========================================================================
+   3. BOOKING WIDGET — segmented trip selector
+   ========================================================================== */
+.skin .al-search-tabs {
+  display: inline-flex; gap: 4px; padding: 5px;
+  background: #f8f6f1; border-radius: 999px; margin-bottom: 22px;
+}
+.skin .al-search-tab {
+  border: 0 !important; border-radius: 999px !important;
+  padding: 9px 18px !important;
+  background: transparent !important; color: #3c434e !important;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.skin .al-search-tab.active {
+  background: #fff !important; color: #c0480c !important;
+  box-shadow: 0 6px 16px -6px rgba(36, 56, 187, 0.35);
+}
+.skin .al-search-field label { letter-spacing: 0.14em; color: #2438bb; }
+.skin .al-search-field input { height: 52px; border-radius: 14px !important; border: 1.5px solid #f2ede2; background: #fbfaf6; font-weight: 600; }
+.skin .al-search-fields .al-btn-primary { height: 52px; padding-inline: 30px; font-size: 15px; }
+
+/* ==========================================================================
+   4. OFFERS — boarding-pass cards
+   ========================================================================== */
+.skin .p-offers { background: linear-gradient(180deg, #fbfaf6 0%, #fbf9f5 100%) !important; }
+.skin .p-offers .al-card.al-card {
+  --notch: 94px;
+  display: flex; flex-direction: column; align-items: flex-start;
+  position: relative;
+  border: 0 !important;
+  border-radius: 24px !important;
+  background-color: #fff !important;
+  background-image: linear-gradient(90deg, rgba(36, 56, 187, 0.28) 55%, transparent 0) !important;
+  background-size: 14px 1.5px !important;
+  background-repeat: repeat-x !important;
+  background-position: 0 calc(100% - var(--notch)) !important;
+  -webkit-mask: radial-gradient(circle 15px at 0 calc(100% - var(--notch)), #0000 97%, #000) left / 51% 100% no-repeat,
+                radial-gradient(circle 15px at 100% calc(100% - var(--notch)), #0000 97%, #000) right / 51% 100% no-repeat;
+  mask: radial-gradient(circle 15px at 0 calc(100% - var(--notch)), #0000 97%, #000) left / 51% 100% no-repeat,
+        radial-gradient(circle 15px at 100% calc(100% - var(--notch)), #0000 97%, #000) right / 51% 100% no-repeat;
+  box-shadow: none !important;
+  filter: drop-shadow(0 18px 28px rgba(36, 56, 187, 0.14));
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s !important;
+}
+.skin .p-offers .al-card.al-card:hover { transform: translateY(-8px) !important; filter: drop-shadow(0 30px 40px rgba(192, 72, 12, 0.22)); }
+.skin .p-offers .al-card.al-card::before { display: none !important; }
+.skin .p-offers .al-card p { margin-bottom: 52px; }
+.skin .p-offers .al-card .al-btn-primary { margin-top: auto !important; }
+.skin .p-offers .al-card.al-card::after {
+  content: ''; position: absolute; right: 28px; bottom: calc(var(--notch) + 14px); width: 26px; height: 26px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff5a00' d='M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z'/%3E%3C/svg%3E") center / contain no-repeat;
+  rotate: 90deg; opacity: 0.85;
+  transition: translate 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.skin .p-offers .al-card.al-card:hover::after { translate: 0 -10px; }
+.skin .p-offers .al-badge { text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; }
+
+/* ==========================================================================
+   5. DESTINATIONS — bento grid + explore arrows
+   ========================================================================== */
+.skin .al-dest-card { border-radius: 24px !important; }
+.skin .al-dest-card::after {
+  content: ''; position: absolute; z-index: 2; top: 18px; right: 18px; width: 46px; height: 46px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / 20px no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  rotate: -45deg;
+  transition: rotate 0.5s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s, border-color 0.4s;
+}
+.skin .al-dest-card:hover::after { rotate: 0deg; background-color: #c0480c; border-color: #c0480c; }
+.skin .al-dest-overlay { padding: 24px !important; }
+.skin .al-dest-overlay > * { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.skin .al-dest-card:hover .al-dest-overlay > * { transform: translateY(-6px); }
+.skin .al-dest-city { font-family: var(--skin-display); font-size: 26px !important; font-weight: 500 !important; letter-spacing: -0.01em; }
+.skin .al-dest-country { text-transform: uppercase; letter-spacing: 0.16em; font-size: 11px !important; }
+
+@media (min-width: 761px) {
+  .skin .p-dest .al-dest-grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 250px; gap: 18px; }
+  .skin .p-dest .al-dest-card { aspect-ratio: auto; }
+  .skin .p-dest .al-dest-card:first-child { grid-column: span 2; grid-row: span 2; }
+  .skin .p-dest .al-dest-card:first-child .al-dest-city { font-size: clamp(36px, 4vw, 56px) !important; }
+}
+
+/* ==========================================================================
+   6. CABINS — photo-led cards
+   ========================================================================== */
+.skin .p-cabins .al-card.al-card {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 400px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 26px !important;
+  background: #0e1649 !important;
+}
+.skin .p-cabins .al-card.al-card::before { display: none !important; }
+.skin .p-cabins .al-card.al-card::after {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(11, 18, 59, 0) 25%, rgba(11, 18, 59, 0.6) 60%, rgba(11, 18, 59, 0.96) 100%), var(--cabin-img) center / cover no-repeat;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.skin .p-cabins .al-card.al-card:hover::after { transform: scale(1.1); }
+.skin .p-cabins .al-card:nth-child(1) { --cabin-img: url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=800&q=80'); }
+.skin .p-cabins .al-card:nth-child(2) { --cabin-img: url('https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?w=800&q=80'); }
+.skin .p-cabins .al-card:nth-child(3) { --cabin-img: url('https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?w=800&q=80'); }
+.skin .p-cabins .al-card:nth-child(4) { --cabin-img: url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80'); }
+.skin .p-cabins .al-card h3 { font-family: var(--skin-display); font-size: 26px !important; font-weight: 500 !important; color: #fff !important; }
+.skin .p-cabins .al-card p { color: rgba(255, 255, 255, 0.82) !important; max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s; }
+.skin .p-cabins .al-card:hover p, .skin .p-cabins .al-card:focus-visible p { max-height: 120px; opacity: 1; }
+@media (hover: none) { .skin .p-cabins .al-card p { max-height: none; opacity: 1; } }
+
+/* ==========================================================================
+   7. LOYALTY — metallic membership cards
+   ========================================================================== */
+.skin .p-loyalty .p-tier.p-tier {
+  position: relative; overflow: hidden;
+  aspect-ratio: 1.586;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  border: 0 !important;
+  border-radius: 18px !important;
+  box-shadow: 0 24px 40px -22px rgba(14, 22, 73, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s !important;
+}
+.skin .p-loyalty .p-tier.p-tier:hover { transform: translateY(-8px) rotate(-2deg) !important; box-shadow: 0 36px 50px -24px rgba(14, 22, 73, 0.7) !important; }
+.skin .p-loyalty .p-tier--blue.p-tier--blue { background: linear-gradient(135deg, #17257b 0%, #2940d6 55%, #7b8dd3 100%) !important; }
+.skin .p-loyalty .p-tier--silver.p-tier--silver { background: linear-gradient(135deg, #9599a0 0%, #f6f4ee 45%, #bcbfc4 70%, #9599a0 100%) !important; }
+.skin .p-loyalty .p-tier--gold.p-tier--gold { background: linear-gradient(135deg, #8f330c 0%, #fdb376 45%, #c0480c 70%, #8f330c 100%) !important; }
+.skin .p-loyalty .p-tier--platinum.p-tier--platinum { background: linear-gradient(135deg, #0a0f33 0%, #262b34 50%, #0e1014 100%) !important; }
+.skin .p-loyalty :is(.p-tier--blue, .p-tier--platinum) :is(span, p) { color: #fff !important; }
+.skin .p-loyalty :is(.p-tier--silver, .p-tier--gold) :is(span, p) { color: #171b21 !important; }
+.skin .p-loyalty .p-tier span { font-family: var(--skin-display); font-size: 20px; letter-spacing: 0.04em; }
+.skin .p-loyalty .p-tier.p-tier::before {
+  content: '' !important; position: absolute; top: 18px; right: 20px; left: auto;
+  width: 38px; height: 28px; border-radius: 6px;
+  background: linear-gradient(135deg, #fdce9e, #c0480c 50%, #fdb377);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-text-stroke: 0;
+}
+.skin .p-loyalty .p-tier.p-tier::after {
+  content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: translateX(-120%) skewX(-20deg);
+  pointer-events: none;
+}
+.skin .p-loyalty .p-tier.p-tier:hover::after { animation: fl-sheen 1.1s cubic-bezier(0.16, 1, 0.3, 1); }
+
+/* ==========================================================================
+   8. NEWS — editorial newsroom layout
+   ========================================================================== */
+.skin .p-news .al-card.al-card {
+  position: relative;
+  background: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-top: 1.5px solid rgba(17, 27, 90, 0.16) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 28px 44px 0 0 !important;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.skin .p-news .al-card.al-card::before {
+  content: '' !important; position: absolute; left: 0; top: -1.5px; height: 1.5px; width: 100%;
+  background: linear-gradient(90deg, #c0480c, #2940d6);
+  -webkit-text-stroke: 0;
+  transform: scaleX(0); transform-origin: 0 50%;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.skin .p-news .al-card.al-card:hover { transform: none !important; }
+.skin .p-news .al-card.al-card:hover::before { transform: scaleX(1); }
+.skin .p-news .al-card.al-card::after {
+  content: '→'; position: absolute; top: 26px; right: 0; font-size: 22px; color: #c0480c;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.skin .p-news .al-card.al-card:hover::after { transform: translate(6px, -6px) rotate(-45deg); }
+.skin .p-news .al-card h3 { font-family: var(--skin-display); font-size: 26px !important; font-weight: 500 !important; line-height: 1.2; transition: color 0.3s; }
+.skin .p-news .al-card:hover h3 { color: #c0480c !important; }
+.skin .p-news .al-badge { background: transparent !important; border: 0 !important; padding: 0 !important; text-transform: uppercase; letter-spacing: 0.16em; font-size: 11px; color: #2438bb; }
+
+/* ==========================================================================
+   9. FLIGHT PATH ACROSS THE AIRLINE HERO
+   ========================================================================== */
+@media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+  .skin .al-hero--tall::before {
+    content: ''; position: absolute; z-index: 1; left: 0; top: 0; width: 1600px; height: 900px; pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Cpath d='M620 640 C900 520 1120 220 1560 110' fill='none' stroke='%23ffffff' stroke-opacity='.4' stroke-width='1.5' stroke-dasharray='5 11'/%3E%3C/svg%3E") 0 0 / 1600px 900px no-repeat;
+  }
+  .skin .al-hero--tall::after {
+    content: ''; position: absolute; z-index: 1; left: 0; top: 0; width: 30px; height: 30px; pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff7a1a' d='M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z'/%3E%3C/svg%3E") center / contain no-repeat;
+    filter: drop-shadow(0 0 10px rgba(192, 72, 12, 0.9));
+    offset-path: path('M620 640 C900 520 1120 220 1560 110');
+    offset-rotate: auto 90deg;
+    animation: fl-fly 11s cubic-bezier(0.45, 0, 0.25, 1) 1.2s infinite;
+  }
+}
+
+/* ==========================================================================
+   10. SECTION RHYTHM + MOBILE SWIPE ROWS
+   ========================================================================== */
+.skin .al-section { padding-block: clamp(84px, 9vw, 136px); }
+
+@media (max-width: 760px) {
+  .skin .al-cards,
+  .skin .p-dest .al-dest-grid {
+    display: grid !important;
+    grid-template-columns: none !important;
+    grid-auto-flow: column;
+    grid-auto-columns: 82%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding-bottom: 14px;
+    margin-inline: -24px;
+    padding-inline: 24px;
+    scroll-padding-inline: 24px;
+    scrollbar-width: none;
+  }
+  .skin .al-cards::-webkit-scrollbar, .skin .p-dest .al-dest-grid::-webkit-scrollbar { display: none; }
+  .skin .al-cards > *, .skin .p-dest .al-dest-grid > * { scroll-snap-align: start; }
+  .skin .p-dest .al-dest-grid { grid-auto-rows: 340px; }
+  .skin .p-dest .al-dest-card { aspect-ratio: auto; height: 100%; }
+  .skin .p-loyalty .al-container { grid-template-columns: 1fr !important; }
+}
+
+/* ==========================================================================
+   11. AIRLINE HOME HERO — full-bleed cinematic photograph
+   ========================================================================== */
+@keyframes al-sweep { 0% { transform: translateX(-80%) skewX(-18deg); } 60%, 100% { transform: translateX(260%) skewX(-18deg); } }
+
+.skin[data-skin="airline"] .al-hero--tall { align-items: center; min-height: min(100svh, 920px); background: #0a0f33; }
+.skin[data-skin="airline"] .al-hero--tall .al-hero-bg { background-position: center 40%; }
+.skin[data-skin="airline"] .al-hero--tall .al-hero-overlay {
+  background:
+    radial-gradient(36% 48% at 80% 22%, rgba(252, 154, 73, 0.2), transparent 70%),
+    linear-gradient(90deg, rgba(10, 15, 52, 0.92) 0%, rgba(16, 25, 85, 0.72) 34%, rgba(24, 38, 127, 0.22) 64%, rgba(10, 15, 52, 0.08) 100%),
+    linear-gradient(180deg, rgba(10, 15, 52, 0.5) 0%, rgba(10, 15, 52, 0) 24%, rgba(10, 15, 52, 0) 66%, rgba(10, 15, 52, 0.88) 100%) !important;
+  overflow: hidden;
+}
+.skin[data-skin="airline"] .al-hero--tall .al-hero-overlay::before {
+  content: ''; position: absolute; top: -10%; bottom: -10%; left: 0; width: 35%; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.07), transparent);
+  animation: al-sweep 11s cubic-bezier(0.45, 0, 0.25, 1) 2s infinite;
+}
+.skin[data-skin="airline"] .al-hero--tall .al-hero-content { padding-bottom: 72px; }
+.skin[data-skin="airline"] .al-hero--tall h1 { font-size: clamp(46px, 6vw, 96px) !important; }
+.skin[data-skin="airline"] .al-hero--tall .al-search-widget {
+  max-width: min(960px, 100%);
+  margin-top: 40px;
+  box-shadow: 0 50px 90px -30px rgba(0, 0, 0, 0.75), 0 0 0 8px rgba(255, 255, 255, 0.06);
+}

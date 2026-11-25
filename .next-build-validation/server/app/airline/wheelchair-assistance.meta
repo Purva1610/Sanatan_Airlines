@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/wheelchair-assistance/layout,_N_T_/airline/wheelchair-assistance/page,_N_T_/airline/wheelchair-assistance"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/wheelchair-assistance/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/54896378c9d701323e1cd88803481736b03c5ce35e39d015ae7089d38da6b98b/$/airline/wheelchair-assistance",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/wheelchair-assistance/page"
+    },
+    "isFallback": false
+  }
+}

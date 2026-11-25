@@ -1,0 +1,1240 @@
+/* ==========================================================================
+   Sanatan — page-specific flagship treatments
+   Visual only — page content is unchanged.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Card-style FAQs on every skinned page
+   -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   FLEXIBLE FARES (/airline/flexible-fares)
+   ========================================================================== */
+@keyframes ff-sheen { from { transform: translateX(-130%) skewX(-20deg); } to { transform: translateX(260%) skewX(-20deg); } }
+@keyframes ff-sweep { 0% { transform: translateX(-80%) skewX(-18deg); } 60%, 100% { transform: translateX(260%) skewX(-18deg); } }
+
+/* ---------- Hero: full-bleed backwaters ---------- */
+
+/* ---------- Fare families: pricing cards ---------- */
+
+/* Tier heads */
+
+/* Featured tier (Flex) */
+
+/* Tier bodies */
+
+/* ---------- Rules table: tier-coloured columns ---------- */
+
+/* ---------- Responsive ---------- */
+
+
+/* ==========================================================================
+   MULTI-CITY (/airline/multi-city) — "one journey, many stops"
+   ========================================================================== */
+@keyframes mc-fly { 0% { offset-distance: 0%; opacity: 0; } 6% { opacity: 1; } 90% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+@keyframes mc-ping { 0% { box-shadow: 0 0 0 6px #fff, 0 0 0 6px rgba(192, 72, 12, 0.6); } 100% { box-shadow: 0 0 0 6px #fff, 0 0 0 20px rgba(192, 72, 12, 0); } }
+@keyframes mc-line { from { background-position: 0 0; } to { background-position: 48px 0; } }
+
+/* ---------- Hero: full-bleed + multi-stop route ---------- */
+@media (min-width: 1000px) and (prefers-reduced-motion: no-preference) {
+  /* Route with four glowing stops */
+}
+
+/* ---------- 4 steps: connected journey timeline ---------- */
+
+/* ---------- Itineraries: photo-topped route cards ---------- */
+
+/* ---------- Gallery: magazine bento ---------- */
+
+/* ---------- Custom enquiry: split card ---------- */
+
+/* ---------- Responsive ---------- */
+
+/* Multi-City steps — connector refinement: numbered stops sit on the card
+   edges and the dashed route runs behind the cards, visible only between them. */
+
+
+/* ==========================================================================
+   ROUND THE WORLD (/airline/round-the-world) — "circle the globe"
+   ========================================================================== */
+@keyframes rtw-spin { to { rotate: 360deg; } }
+@keyframes rtw-orbit { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+@keyframes rtw-pulse { 0%, 100% { opacity: 0.35; transform: scale(1); } 50% { opacity: 0.75; transform: scale(1.03); } }
+
+/* ---------- Hero: full-bleed + orbiting globe ---------- */
+
+/* ---------- How it works ---------- */
+/* The original planning photo link returns 404 — show a local photograph instead */
+
+/* ---------- Zone pricing: glass matrix ---------- */
+
+/* ---------- Itineraries: photo-topped journey cards ---------- */
+
+/* ---------- Enquiry: split card ---------- */
+
+/* ---------- Responsive ---------- */
+
+/* Round the World hero — kept simple: photograph, headline, copy and buttons only */
+
+
+/* ==========================================================================
+   FLIGHT STATUS (/airline/flight-status)
+   Simple full-photo hero · docked search · live board + tracker · at a glance ·
+   status guide · day-of-travel timeline · disruption support · alert banner
+   ========================================================================== */
+@keyframes fs-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); } 70% { box-shadow: 0 0 0 9px rgba(74, 222, 128, 0); } }
+@keyframes fs-dash { to { background-position: 24px 0; } }
+
+/* Header transparent over the hero */
+
+/* ---------- Hero (simple) ---------- */
+
+/* ---------- Search (docked) ---------- */
+
+/* ---------- Board + tracker ---------- */
+
+/* ---------- At a glance ---------- */
+
+/* ---------- Status guide ---------- */
+
+/* ---------- Day-of-travel timeline ---------- */
+
+/* ---------- Disruption support ---------- */
+
+/* ---------- Alert banner ---------- */
+
+/* ---------- Responsive ---------- */
+
+
+/* ==========================================================================
+   DESTINATIONS (/airline/destinations)
+   Simple full-photo hero with glass stats · frosted sticky region filter ·
+   magazine grid per region (lead city + tiles) · split enquiry card
+   ========================================================================== */
+@keyframes dn-in { from { opacity: 0; transform: translateY(26px) scale(0.97); } to { opacity: 1; transform: none; } }
+
+/* Header transparent over the hero */
+
+/* ---------- Hero ---------- */
+
+/* ---------- Region filter ---------- */
+
+/* ---------- Region heading ---------- */
+
+/* ---------- Magazine grid ---------- */
+/* Regions with 3 or 4 cities: lead card + tiles still fill neatly */
+
+/* ---------- Enquiry: split card ---------- */
+
+/* ---------- Responsive ---------- */
+
+/* Destinations grid — 3-column magazine layout so 3, 4 and 6 cities all fill evenly:
+   lead city spans 2×2; with 4 cities the last one becomes a wide banner. */
+
+/* Destinations hero — refined: clean two-column composition, correct headline
+   leading, one slim stats panel, lighter grade so the photograph keeps its colour. */
+
+/* Stats: one glass panel with dividers */
+
+
+/* ==========================================================================
+   GROUP TRAVEL (/airline/group-travel)
+   Simple full-photo hero · benefit checklist + framed photo · glass privilege
+   cards with icon tiles · tall split enquiry card
+   ========================================================================== */
+
+/* ---------- Hero: simple full-bleed ---------- */
+
+/* ---------- Why book as a group ---------- */
+
+/* ---------- Privilege cards ---------- */
+
+/* ---------- Enquiry: tall split card ---------- */
+
+/* ---------- Responsive ---------- */
+/* Group Travel: keep the framed photo static so the orange offset frame stays visible */
+
+
+/* ==========================================================================
+   CORPORATE TRAVEL (/airline/corporate-travel)
+   Simple full-photo hero · programme checklist + navy-framed photo ·
+   dashboard-style tool cards · split enquiry card · glass explore tiles
+   ========================================================================== */
+
+/* ---------- Hero: simple full-bleed (resets the light panorama layout) ---------- */
+
+/* ---------- Programme: checklist + navy-framed photo ---------- */
+
+/* ---------- Tools: dashboard cards ---------- */
+
+/* ---------- Enquiry: split card ---------- */
+
+/* ---------- Explore more (navy strip) ---------- */
+
+/* ---------- Responsive ---------- */
+/* Corporate Travel: header sits transparently over the hero */
+
+
+/* ==========================================================================
+   STUDENT FARES (/airline/student-fares)
+   Simple full-photo hero · benefit cards + polaroid photo · progress steps ·
+   split enquiry card
+   ========================================================================== */
+
+/* ---------- Hero: simple full-bleed (resets the split layout) ---------- */
+
+/* ---------- Who qualifies: benefit cards + polaroid photo ---------- */
+
+/* ---------- How to prove student status: progress steps ---------- */
+
+/* ---------- Enquiry: split card ---------- */
+
+/* ---------- Responsive ---------- */
+
+
+/* ==========================================================================
+   CHECK-IN (/airline/check-in)
+   Simple full-photo hero · docked online check-in card · window cards with
+   opens/closes tiles · connected 5-step route · phone boarding-pass
+   illustration · group check-in card · bento gallery
+   ========================================================================== */
+@keyframes ci-scan { 0%, 100% { transform: translateY(0); opacity: 0.2; } 50% { transform: translateY(150px); opacity: 0.9; } }
+@keyframes ci-line { to { background-position: 48px 0; } }
+
+/* ---------- Hero: simple full-bleed (resets the saffron layout) ---------- */
+
+/* ---------- Docked online check-in card ---------- */
+
+/* ---------- Check-in windows ---------- */
+
+/* ---------- 5 steps: connected route ---------- */
+
+/* ---------- Mobile boarding pass: phone illustration ---------- */
+
+/* ---------- Group check-in ---------- */
+
+/* ---------- Gallery: bento ---------- */
+
+/* ---------- Responsive ---------- */
+
+
+/* ==========================================================================
+   SEAT SELECTION v2 (/airline/seat-selection) — light & airy, seat types first
+   Light hero with photo · 4 seat-type cards · horizontal interactive seat map ·
+   fare comparison cards
+   ========================================================================== */
+@keyframes ss2-pick { 0% { scale: 0.85; } 60% { scale: 1.16; } 100% { scale: 1.08; } }
+@keyframes ss2-in { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Shared section head ---------- */
+
+/* ---------- Light hero ---------- */
+
+/* ---------- Seat types ---------- */
+
+/* ---------- Horizontal seat map ---------- */
+
+/* ---------- Fare comparison cards ---------- */
+
+/* ---------- Responsive ---------- */
+
+
+/* ==========================================================================
+   ENQUIRY (/airline/enquiry) — split-screen concierge desk
+   Sticky photo panel (heading, contacts, shortcuts) · spacious form card
+   ========================================================================== */
+@keyframes enq-in { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+
+.enq { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.2fr); min-height: calc(100svh - 100px); background: #fbfaf6; }
+.skin main > section.enq::before { display: none !important; }
+
+/* ---------- Concierge panel ---------- */
+.enq-side {
+  position: relative; isolation: isolate; overflow: hidden; color: #fff;
+  background: #0e1649;
+}
+.enq-side::before {
+  content: ''; position: absolute; inset: 0; z-index: -2;
+  background: url('/images/india/mumbai-gateway-dusk.webp') center / cover no-repeat;
+  animation: sk-zoom-out 2.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.enq-side::after {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(60% 50% at 100% 0%, rgba(192, 72, 12, 0.28), transparent 70%),
+    linear-gradient(180deg, rgba(14, 22, 73, 0.82) 0%, rgba(14, 22, 73, 0.9) 55%, rgba(14, 22, 73, 0.97) 100%);
+}
+.enq-side-inner { position: sticky; top: 90px; padding: clamp(48px, 6vw, 84px) clamp(24px, 4.5vw, 72px); }
+.enq-side-inner > * { animation: enq-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.enq-side-inner > :nth-child(2) { animation-delay: 0.08s; }
+.enq-side-inner > :nth-child(3) { animation-delay: 0.16s; }
+.enq-side-inner > :nth-child(4) { animation-delay: 0.24s; }
+.enq-side-inner > :nth-child(5) { animation-delay: 0.32s; }
+.enq-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #fdd8b2; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.enq-eyebrow::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #c0480c; box-shadow: 0 0 0 4px rgba(192, 72, 12, 0.22); }
+.enq-side h1 { margin: 22px 0 16px; font-size: clamp(38px, 4.2vw, 64px) !important; line-height: 1.06 !important; color: #fff; }
+.enq-sub { font-size: 16px; line-height: 1.7; color: rgba(215, 242, 250, 0.82); max-width: 460px; }
+
+.enq-contacts { display: grid; gap: 10px; margin-top: 34px; }
+.enq-contact {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 18px; text-decoration: none; color: #fff;
+  background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  transition: background-color 0.3s, border-color 0.3s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+a.enq-contact:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(214, 80, 14, 0.6); transform: translateX(4px); }
+.enq-contact-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; flex-shrink: 0; background: linear-gradient(135deg, #c0480c, #d6500e); box-shadow: 0 10px 20px -8px rgba(192, 72, 12, 0.7); }
+.enq-contact-text { display: flex; flex-direction: column; min-width: 0; }
+.enq-contact-text span { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(215, 242, 250, 0.6); }
+.enq-contact-text strong { font-size: 15px; overflow-wrap: anywhere; }
+
+.enq-shortcuts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 26px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.enq-shortcut {
+  position: relative; display: flex; align-items: center; gap: 10px; padding: 12px 34px 12px 12px; border-radius: 14px;
+  font-size: 13.5px; font-weight: 600; color: rgba(255, 255, 255, 0.9); text-decoration: none;
+  background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.enq-shortcut:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.22); }
+.enq-shortcut-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); color: #fdb377; flex-shrink: 0; }
+.enq-shortcut-arrow { position: absolute; right: 12px; color: rgba(255, 255, 255, 0.45); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s; }
+.enq-shortcut:hover .enq-shortcut-arrow { transform: translate(2px, -2px); color: #d6500e; }
+
+/* ---------- Form area ---------- */
+.enq-main { padding: clamp(40px, 5vw, 80px) clamp(20px, 4.5vw, 80px); display: flex; align-items: flex-start; justify-content: center; }
+.enq-form {
+  width: 100%; max-width: 760px; padding: clamp(26px, 3.4vw, 46px); border-radius: 30px; background: #fff;
+  border: 1px solid rgba(36, 56, 187, 0.07); box-shadow: 0 50px 100px -50px rgba(14, 22, 73, 0.45);
+  animation: enq-in 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+/* The form component's own wrapper becomes transparent inside the card */
+.enq-form > div { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; }
+/* Its heading repeats the panel's heading word for word — keep one copy visible */
+.enq-form > div > div:first-child:has(> h2) { display: none !important; }
+.enq-form form > div { gap: 18px !important; }
+.enq-form label:not(:has(input[type="checkbox"])) { color: #2438bb !important; letter-spacing: 0.12em !important; font-size: 11px !important; font-weight: 800 !important; }
+.enq-form :is(input:not([type="checkbox"]), select, textarea) {
+  border: 1.5px solid #f2ede2 !important; border-radius: 14px !important; background: #fbfaf6 !important;
+  padding: 0 16px !important; min-height: 52px; font-size: 15px !important; color: #111b5a !important;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s !important;
+}
+.enq-form textarea { padding: 14px 16px !important; min-height: 130px !important; }
+.enq-form :is(input:not([type="checkbox"]), select, textarea):focus { border-color: #c0480c !important; background: #fff !important; box-shadow: 0 0 0 4px rgba(192, 72, 12, 0.14) !important; }
+.enq-form input[type="checkbox"] { accent-color: #c0480c !important; }
+.enq-form button[type="submit"] {
+  height: 56px; padding: 0 34px !important; border-radius: 999px !important; font-size: 15px !important;
+  background-image: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%), linear-gradient(120deg, #c0480c, #c0480c 50%, #d6500e) !important;
+  background-size: 250% 100%, 100% 100% !important; background-position: 130% 0, 0 0 !important;
+  box-shadow: 0 16px 34px -14px rgba(192, 72, 12, 0.8) !important;
+  transition: background-position 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s !important;
+}
+.enq-form button[type="submit"]:hover { background-position: -30% 0, 0 0 !important; transform: translateY(-2px); }
+.enq-form button[type="button"] { border-radius: 999px !important; height: 56px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .enq { grid-template-columns: 1fr; }
+  .enq-side-inner { position: static; }
+  .enq-main { padding-top: 32px; }
+}
+@media (max-width: 520px) {
+  .enq-shortcuts { grid-template-columns: 1fr; }
+}
+
+
+/* ==========================================================================
+   ECONOMY CLASS (/airline/economy-class) — dedicated editorial layout
+   Simple full-photo hero · spec ribbon · story with framed photo ·
+   amenities bento · filmstrip gallery · light enquiry card · two-column FAQs
+   ========================================================================== */
+@keyframes eco-in { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+
+/* Header transparent over the hero */
+
+/* ---------- Hero (simple) ---------- */
+
+/* ---------- Spec ribbon ---------- */
+
+/* ---------- Story ---------- */
+
+/* ---------- Amenities bento ---------- */
+
+/* ---------- Filmstrip gallery ---------- */
+
+/* ---------- Enquiry (light) ---------- */
+
+/* ---------- FAQs: two-column ---------- */
+
+/* ---------- Responsive ---------- */
+/* Economy: 3-column bento fills evenly (lead 2×2 + five tiles = 3×3); calmer spec sizing */
+
+/* ==========================================================================
+   PREMIUM ECONOMY (/airline/premium-economy)
+   Editorial, dark-navy and champagne treatment for an elevated cabin
+   ========================================================================== */
+@keyframes pe-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   BUSINESS CLASS (/airline/business-class)
+   Private-suite, editorial and black-on-ivory luxury treatment
+   ========================================================================== */
+@keyframes bc-reveal {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   EXTRA LEGROOM (/airline/extra-legroom)
+   Spacious, architectural, warm-neutral premium treatment
+   ========================================================================== */
+@keyframes el-reveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   IN-FLIGHT ENTERTAINMENT (/airline/in-flight-entertainment)
+   Cinematic SkyPlay experience: dark theatre, editorial library, warm gold
+   ========================================================================== */
+@keyframes ife-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   IN-FLIGHT DINING (/airline/in-flight-dining)
+   Warm editorial dining direction: burgundy, ivory and antique gold
+   ========================================================================== */
+@keyframes fd-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   OUR FLEET (/airline/our-fleet)
+   Technical luxury: dark graphite, polished silver and aircraft-led editorial
+   ========================================================================== */
+@keyframes fl-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   BAGGAGE (/airline/baggage)
+   Traveller-guided premium: ivory, deep ink and warm bronze
+   ========================================================================== */
+@keyframes bg-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   EXCESS BAGGAGE (/airline/excess-baggage)
+   Clear pricing, warm ivory and deep travel-blue premium treatment
+   ========================================================================== */
+@keyframes xb-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   SPORTS EQUIPMENT (/airline/sports-equipment)
+   Active-travel premium: alpine green, ivory and warm mineral gold
+   ========================================================================== */
+@keyframes se-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   MUSICAL INSTRUMENTS (/airline/musical-instruments)
+   Elegant, intimate travel presentation: burgundy, ivory and antique brass
+   ========================================================================== */
+@keyframes mi-reveal {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   PET TRAVEL (/airline/pet-travel)
+   Warm companion-first direction: split hero, sage, cream and terracotta
+   ========================================================================== */
+
+/* ==========================================================================
+   MEDICAL CLEARANCE (/airline/medical-clearance)
+   Calm clinical-planner direction: mint, soft white and deep teal
+   ========================================================================== */
+
+/* ==========================================================================
+   SPECIAL ASSISTANCE (/airline/special-assistance)
+   Accessible, calm and reassuring — sky blue, warm white and soft coral
+   ========================================================================== */
+
+/* Special Assistance — redesigned hero */
+
+/* ==========================================================================
+   WHEELCHAIR ASSISTANCE (/airline/wheelchair-assistance)
+   Dignity-first, soft architectural direction
+   ========================================================================== */
+
+/* ==========================================================================
+   MEDICAL CLEARANCE v2 (/airline/medical-clearance)
+   Entirely distinct: clinical control desk, document review and route rail
+   ========================================================================== */
+
+/* ==========================================================================
+   GRIEVANCE REDRESSAL (/grievance-redressal)
+   Calm resolution desk: deep navy, white, muted teal and clear status cues
+   ========================================================================== */
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  min-height: 330px;
+  display: flex;
+  align-items: flex-end;
+  padding: 130px 24px 70px !important;
+  background:
+    radial-gradient(38% 55% at 82% 20%, rgba(112, 185, 177, 0.16), transparent 72%),
+    linear-gradient(135deg, #0b123b 0%, #131e65 100%) !important;
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  right: -120px;
+  bottom: -290px;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(157, 205, 200, 0.12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px rgba(157, 205, 200, 0.025), 0 0 0 140px rgba(157, 205, 200, 0.018);
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1) nav {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 16px !important;
+  color: rgba(255, 255, 255, 0.52) !important;
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1) nav a {
+  color: rgba(255, 255, 255, 0.62) !important;
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1) h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(46px, 6vw, 78px) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.04em;
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(1) p {
+  position: relative;
+  z-index: 2;
+  color: #91aaa6 !important;
+}
+.skin[data-skin="grievance-redressal"] main > div:nth-child(2) {
+  display: none;
+}
+.skin[data-skin="grievance-redressal"] main > article {
+  max-width: 1240px !important;
+  padding: 0 24px 80px !important;
+  font-family: var(--al-body-font, Manrope, sans-serif);
+  color: #121c5d;
+  line-height: 1.7;
+}
+.skin[data-skin="grievance-redressal"] main > article > .gr-page {
+  margin-top: 0;
+}
+.gr-page {
+  display: block;
+  width: 100%;
+}
+.gr-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 44px;
+  align-items: end;
+  margin: 0 -24px;
+  padding: 70px 24px 64px;
+  border-bottom: 1px solid #dfe7e4;
+  background: #fff;
+}
+.gr-intro-copy > span,
+.gr-officer-copy > span,
+.gr-section-head > span,
+.gr-submit-copy > span,
+.gr-external-copy > span,
+.gr-categories .gr-section-head > span {
+  color: #558f85;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.gr-intro h2,
+.gr-officer h2,
+.gr-section-head h2,
+.gr-submit-copy h2,
+.gr-external-copy h2 {
+  margin: 12px 0 12px;
+  color: #121c5d;
+  font-size: clamp(34px, 4vw, 54px) !important;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+.gr-intro-copy p {
+  max-width: 680px;
+  margin: 0;
+  color: #66797d;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.gr-intro-contact {
+  display: grid;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  background: #f5f8f7;
+}
+.gr-intro-contact div {
+  min-height: 82px;
+  display: grid;
+  grid-template-columns: 32px 72px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dbe4e1;
+}
+.gr-intro-contact div:last-child { border-bottom: 0; }
+.gr-intro-contact svg { color: #558f85; }
+.gr-intro-contact span { color: #7b8d90; font-size: 9.5px; font-weight: 800; text-transform: uppercase; }
+.gr-intro-contact a { color: #121c5d; font-size: 12.5px; font-weight: 800; text-decoration: none; overflow-wrap: anywhere; }
+
+.gr-officer {
+  min-height: 170px;
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) 210px;
+  align-items: center;
+  gap: 22px;
+  margin: 32px 0 0;
+  padding: 28px;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  background: #fff;
+}
+.gr-officer-mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e7f1ef;
+  color: #558f85;
+}
+.gr-officer h2 { margin: 7px 0 6px; font-size: 24px !important; }
+.gr-officer-copy p { margin: 0; color: #718186; font-size: 12.5px; }
+.gr-officer-status {
+  display: grid;
+  gap: 6px;
+  padding-left: 22px;
+  border-left: 1px solid #dbe4e1;
+}
+.gr-officer-status span { color: #7b8d90; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.gr-officer-status strong { color: #558f85; font-size: 14px; }
+
+.gr-escalation {
+  padding: 82px 0;
+  background: #fff;
+}
+.gr-section-head {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+.gr-section-head--left { max-width: none; margin: 0 0 32px; text-align: left; }
+.gr-step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gr-step-grid article {
+  min-height: 260px;
+  padding: 26px;
+  border-left: 1px solid #dbe4e1;
+  background: #f8faf9;
+}
+.gr-step-grid article:first-child { border-left: 0; }
+.gr-step-grid article > span {
+  display: block;
+  margin-bottom: 50px;
+  color: #558f85;
+  font: 600 16px/1 var(--skin-display, 'Playfair Display'), serif;
+}
+.gr-step-grid h3 { margin: 0 0 8px; color: #121c5d; font-size: 18px; }
+.gr-step-grid p { min-height: 66px; margin: 0 0 12px; color: #718186; font-size: 13px; line-height: 1.55; }
+.gr-step-grid small {
+  display: block;
+  padding-top: 12px;
+  border-top: 1px solid #dbe4e1;
+  color: #558f85;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gr-submit {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: 44px;
+  margin: 0 -24px;
+  padding: 82px 24px;
+  background: #edf4f2;
+}
+.gr-submit-copy p { color: #718186; line-height: 1.75; }
+.gr-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 30px 60px -48px rgba(18, 28, 93, 0.55);
+}
+.gr-form label {
+  display: grid;
+  gap: 7px;
+  color: #718186;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.gr-form input,
+.gr-form select,
+.gr-form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #d8e2df;
+  border-radius: 8px;
+  background: #f8faf9;
+  color: #121c5d;
+  font: 500 13.5px/1.45 Manrope, sans-serif;
+  outline: none;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.gr-form input,
+.gr-form select { height: 46px; padding: 0 12px; }
+.gr-form textarea { min-height: 112px; resize: vertical; padding: 12px; }
+.gr-form input:focus,
+.gr-form select:focus,
+.gr-form textarea:focus { border-color: #558f85; box-shadow: 0 0 0 3px rgba(85, 143, 133, 0.1); }
+.gr-form-wide { grid-column: 1 / -1; }
+.gr-form-check {
+  grid-column: 1 / -1;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px !important;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.gr-form-check input { width: 16px; height: 16px; }
+.gr-submit-btn {
+  grid-column: 1 / -1;
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: #121c5d;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.gr-categories {
+  padding: 82px 0;
+  background: #fff;
+}
+.gr-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #dbe4e1;
+  border-left: 1px solid #dbe4e1;
+}
+.gr-category-grid article {
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  padding: 20px;
+  border-right: 1px solid #dbe4e1;
+  border-bottom: 1px solid #dbe4e1;
+  background: #fff;
+}
+.gr-category-grid svg { color: #558f85; }
+.gr-category-grid h3 { margin: 0 0 7px; color: #121c5d; font-size: 15.5px; }
+.gr-category-grid p { margin: 0; color: #718186; font-size: 12.5px; line-height: 1.55; }
+
+.gr-response {
+  margin: 0 -24px;
+  padding: 82px 24px;
+  background: #edf4f2;
+}
+.gr-response-table {
+  max-width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  background: #fff;
+}
+.gr-response-head,
+.gr-response-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 1.1fr;
+  align-items: center;
+}
+.gr-response-head {
+  min-height: 58px;
+  background: #121c5d;
+  color: #a8ccc5;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.gr-response-head span,
+.gr-response-row span { padding: 13px 16px; }
+.gr-response-row {
+  min-height: 64px;
+  border-top: 1px solid #dbe4e1;
+  color: #718186;
+  font-size: 12.5px;
+}
+.gr-response-row span:first-child { color: #121c5d; font-weight: 800; }
+.gr-response-row span:last-child { color: #558f85; font-weight: 700; }
+
+.gr-external {
+  padding: 82px 0;
+  background: #fff;
+}
+.gr-external-copy {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+.gr-external-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.gr-external-grid article {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid #dbe4e1;
+  border-radius: 12px;
+  background: #f8faf9;
+}
+.gr-external-grid svg { color: #558f85; }
+.gr-external-grid h3 { margin: 22px 0 8px; color: #121c5d; font-size: 17px; }
+.gr-external-grid p { margin: 0 0 14px; color: #718186; font-size: 12.5px; line-height: 1.65; }
+.gr-external-grid a { color: #558f85; font-size: 11.5px; font-weight: 800; text-decoration: none; }
+
+.gr-contact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  gap: 12px;
+  align-items: center;
+  margin: 0 -24px 0;
+  padding: 24px;
+  border-top: 1px solid #dbe4e1;
+  background: #121c5d;
+  color: #fff;
+}
+.gr-contact div {
+  min-height: 74px;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-content: center;
+  column-gap: 8px;
+  padding: 10px 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+}
+.gr-contact svg { grid-row: 1 / 3; color: #91cfc2; }
+.gr-contact span { color: #91aaa6; font-size: 8.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.gr-contact strong { margin-top: 4px; font-size: 11.5px; overflow-wrap: anywhere; }
+.gr-contact a {
+  color: #121c5d;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #91cfc2;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .gr-intro,
+  .gr-submit,
+  .gr-officer { grid-template-columns: 1fr; }
+  .gr-officer { grid-template-columns: 58px 1fr; }
+  .gr-officer-status { grid-column: 1 / -1; border-left: 0; border-top: 1px solid #dbe4e1; padding: 16px 0 0; }
+  .gr-step-grid { grid-template-columns: 1fr; }
+  .gr-step-grid article { border-left: 0; border-top: 1px solid #dbe4e1; min-height: 220px; }
+  .gr-step-grid article:first-child { border-top: 0; }
+  .gr-category-grid,
+  .gr-external-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gr-contact { grid-template-columns: 1fr 1fr; }
+  .gr-contact a { justify-self: start; margin: 8px 14px; }
+}
+@media (max-width: 620px) {
+  .skin[data-skin="grievance-redressal"] main > div:nth-child(1) { min-height: 280px; padding: 110px 20px 54px !important; }
+  .skin[data-skin="grievance-redressal"] main > div:nth-child(1) h1 { font-size: clamp(40px, 13vw, 58px) !important; }
+  .skin[data-skin="grievance-redressal"] main > article { padding-inline: 20px !important; }
+  .gr-intro { margin-inline: -20px; padding-inline: 20px; }
+  .gr-submit,
+  .gr-response,
+  .gr-contact { margin-inline: -20px; padding-inline: 20px; }
+  .gr-form { grid-template-columns: 1fr; }
+  .gr-form-wide,
+  .gr-form-check,
+  .gr-submit-btn { grid-column: auto; }
+  .gr-category-grid,
+  .gr-external-grid,
+  .gr-contact { grid-template-columns: 1fr; }
+  .gr-response-table { overflow-x: auto; }
+  .gr-response-head,
+  .gr-response-row { min-width: 620px; }
+  .gr-officer { grid-template-columns: 1fr; }
+  .gr-contact div { border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.09); }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY STATEMENT (/accessibility)
+   Calm inclusive direction: sky, lilac, warm white and clear high contrast
+   ========================================================================== */
+.skin[data-skin="accessibility"] main > div:nth-child(1) {
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  padding: 130px 24px 70px !important;
+  background:
+    radial-gradient(38% 55% at 82% 18%, rgba(169, 179, 195, 0.24), transparent 72%),
+    linear-gradient(135deg, #15216d 0%, #2033aa 100%) !important;
+  overflow: hidden;
+  position: relative;
+}
+.skin[data-skin="accessibility"] main > div:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  right: -90px;
+  bottom: -260px;
+  width: 480px;
+  height: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 64px rgba(255, 255, 255, 0.025), 0 0 0 128px rgba(255, 255, 255, 0.018);
+}
+.skin[data-skin="accessibility"] main > div:nth-child(1) nav {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 16px !important;
+  color: rgba(255, 255, 255, 0.54) !important;
+}
+.skin[data-skin="accessibility"] main > div:nth-child(1) nav a {
+  color: rgba(255, 255, 255, 0.66) !important;
+}
+.skin[data-skin="accessibility"] main > div:nth-child(1) h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(44px, 6vw, 76px) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.04em;
+}
+.skin[data-skin="accessibility"] main > div:nth-child(1) p {
+  position: relative;
+  z-index: 2;
+  color: #d1d5da !important;
+}
+.skin[data-skin="accessibility"] main > div:nth-child(2) { display: none; }
+.skin[data-skin="accessibility"] main > article {
+  max-width: 1240px !important;
+  padding: 0 24px 80px !important;
+  color: #162272;
+  line-height: 1.7;
+}
+.acc-page { width: 100%; }
+.acc-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 44px;
+  align-items: end;
+  margin: 0 -24px;
+  padding: 70px 24px 64px;
+  border-bottom: 1px solid #fee5cb;
+  background: #fff;
+}
+.acc-intro-copy > span,
+.acc-section-head > span,
+.acc-digital-copy > span,
+.acc-support-copy > span,
+.acc-feedback-grid ~ span,
+.acc-limitations span {
+  color: #525c6c;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.acc-intro h2,
+.acc-section-head h2,
+.acc-digital-copy h2,
+.acc-support-copy h2,
+.acc-section-head--left h2,
+.acc-limitations h2 {
+  margin: 12px 0 12px;
+  color: #162272;
+  font-size: clamp(34px, 4vw, 54px) !important;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+.acc-intro-copy p {
+  max-width: 680px;
+  margin: 0;
+  color: #667786;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.acc-intro-status {
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #fee5cb;
+  border-radius: 16px;
+  background: #fbf9f5;
+  color: #525c6c;
+}
+.acc-intro-status div { display: grid; gap: 5px; }
+.acc-intro-status span { color: #969ca5; font-size: 9px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.acc-intro-status strong { color: #162272; font-size: 12.5px; }
+
+.acc-airport {
+  padding: 82px 0;
+  background: #fff;
+}
+.acc-section-head {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+.acc-section-head--left {
+  max-width: none;
+  margin: 0 0 32px;
+  text-align: left;
+}
+.acc-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.acc-service-grid article {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid #fee5cb;
+  border-radius: 18px;
+  background: #fbfaf6;
+  transition: transform 0.45s, box-shadow 0.45s;
+}
+.acc-service-grid article:nth-child(2),
+.acc-service-grid article:nth-child(5) {
+  background: #f9f7f3;
+  transform: translateY(16px);
+}
+.acc-service-grid article:hover { transform: translateY(-7px); box-shadow: 0 36px 64px -52px rgba(22, 34, 114, 0.72); }
+.acc-service-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 34px;
+  border-radius: 50%;
+  background: #f5f1e9;
+  color: #525c6c;
+}
+.acc-service-grid h3 { margin: 0 0 8px; color: #162272; font-size: 17px; }
+.acc-service-grid p { margin: 0; color: #667786; font-size: 12.5px; line-height: 1.65; }
+
+.acc-digital {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(44px, 6vw, 84px);
+  align-items: start;
+  margin: 0 -24px;
+  padding: 82px 24px;
+  background: #f7f4ee;
+}
+.acc-digital-copy p { color: #667786; line-height: 1.75; }
+.acc-digital-list {
+  border-top: 1px solid #fddfc1;
+}
+.acc-digital-list article {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 12px;
+  min-height: 94px;
+  align-content: center;
+  padding: 14px 4px;
+  border-bottom: 1px solid #fddfc1;
+}
+.acc-digital-list article > span {
+  color: #525c6c;
+  font: 600 15px/1 var(--skin-display, 'Playfair Display'), serif;
+}
+.acc-digital-list h3 { margin: 0 0 5px; color: #162272; font-size: 15.5px; }
+.acc-digital-list p { margin: 0; color: #667786; font-size: 12.5px; }
+
+.acc-support {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 36px;
+  align-items: center;
+  margin: 82px 0;
+  padding: clamp(32px, 5vw, 58px);
+  border-radius: 22px;
+  background: #162272;
+  color: #fff;
+}
+.acc-support-copy > span { color: #c5cad2; }
+.acc-support-copy h2 { color: #fff; }
+.acc-support-copy p { max-width: 620px; margin: 0; color: rgba(255, 255, 255, 0.68); line-height: 1.72; }
+.acc-support-actions {
+  display: grid;
+  gap: 8px;
+  min-width: 220px;
+}
+.acc-btn {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0 16px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.acc-btn--primary { background: #c8cfd9; color: #162272; }
+.acc-btn--secondary { color: #fff; border-color: rgba(255, 255, 255, 0.16); background: rgba(255, 255, 255, 0.05); }
+
+.acc-feedback {
+  padding: 82px 0;
+  background: #fff;
+}
+.acc-feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.acc-feedback-grid article {
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #fee5cb;
+  border-radius: 14px;
+  background: #fbfaf6;
+}
+.acc-feedback-grid article > svg { color: #525c6c; }
+.acc-feedback-grid article div { display: grid; gap: 6px; align-content: start; }
+.acc-feedback-grid article div span { color: #969ca5; font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.acc-feedback-grid article a { color: #162272; font-size: 12.5px; font-weight: 800; text-decoration: none; overflow-wrap: anywhere; }
+.acc-feedback-grid article p { margin: 0; color: #667786; font-size: 12.5px; line-height: 1.55; }
+.acc-feedback-note {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: #667786;
+  font-size: 12.5px;
+}
+
+.acc-limitations {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 44px;
+  align-items: center;
+  margin: 0 -24px;
+  padding: 46px 24px;
+  border-top: 1px solid #fee5cb;
+  border-bottom: 1px solid #fee5cb;
+  background: #f7f4ee;
+}
+.acc-limitations h2 { margin: 8px 0 0; }
+.acc-limitations p { margin: 0; color: #667786; line-height: 1.7; }
+
+@media (max-width: 860px) {
+  .acc-intro,
+  .acc-digital,
+  .acc-support,
+  .acc-limitations { grid-template-columns: 1fr; }
+  .acc-service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .acc-service-grid article:nth-child(2),
+  .acc-service-grid article:nth-child(5) { transform: none; }
+  .acc-support-actions { min-width: 0; grid-template-columns: 1fr 1fr; }
+  .acc-feedback-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .skin[data-skin="accessibility"] main > div:nth-child(1) { min-height: 280px; padding: 110px 20px 54px !important; }
+  .skin[data-skin="accessibility"] main > div:nth-child(1) h1 { font-size: clamp(40px, 13vw, 58px) !important; }
+  .skin[data-skin="accessibility"] main > article { padding-inline: 20px !important; }
+  .acc-intro,
+  .acc-digital,
+  .acc-limitations { margin-inline: -20px; padding-inline: 20px; }
+  .acc-support { margin-inline: 0; }
+  .acc-service-grid { grid-template-columns: 1fr; }
+  .acc-support-actions { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   CARGO SERVICES (/airline/cargo-services)
+   Operations-console direction: dark graphite, signal lime and route map
+   ========================================================================== */
+
+/* ==========================================================================
+   EXPRESS CARGO (/airline/express-cargo)
+   Time-definite: warm departure board, orange signal and vertical timeline
+   ========================================================================== */
+
+/* ==========================================================================
+   LIVE ANIMALS CARGO (/airline/live-animals-cargo)
+   Compassionate logistics: warm sage, earth tones and a vertical welfare journey
+   ========================================================================== */

@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/1owu2pzv51tey.js"
+3:"/_next/static/chunks/13aejdl-em2cz.js"
+4:I[70737,["$2","$3"],"default"]
+5:I[94268,["$2","$3"],"default"]
+6:I[55307,["$2","$3"],"default"]
+7:I[39756,["$2","$3"],"default"]
+8:I[37457,["$2","$3"],"default"]
+9:"/_next/static/chunks/3yju3jx03cst8.js"
+a:"/_next/static/chunks/217okbiwbwsgz.js"
+b:"/_next/static/chunks/2srjn1_cvoqey.js"
+c:"/_next/static/chunks/11f378hlsigsy.js"
+d:I[22016,["$2","$3","$9","$a","$b","$c"],""]
+1c:"ViewportBoundary"
+1d:I[97367,["$2","$3"],"$1c"]
+1e:"MetadataBoundary"
+1f:I[97367,["$2","$3"],"$1e"]
+20:"$Sreact.suspense"
+:HL["/_next/static/chunks/10h22j1mabr2f.css","style"]
+:HL["/_next/static/chunks/2jyp5aciqubz-.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Marathi&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap","style"]
+f:X
+12:X
+12:C
+13:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Overseas Employment Assistance\",\"description\":\"Guidance and coordination for overseas employment enquiries, including profile and documentation support. Employers make hiring decisions; no job or visa is guaranteed.\",\"url\":\"http://localhost:3000/global-services/employment\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"Sanatan Airlines\",\"url\":\"http://localhost:3000\"}}"}}],[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Global Services\",\"item\":\"http://localhost:3000/global-services\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Overseas Employment Assistance\",\"item\":\"http://localhost:3000/global-services/employment\"}]}"}}],"$L14"],"$L15"],["$L16","$L17","$L18","$L19"],"$L1a"]}],"p":"$@1b","v":null,"s":"$f"}}]]
+10:[["children",{"s":{"n":"slug","t":"c","k":"global-services/employment","s":["accessibility","airline","api","aviation-disclaimer","cancellation-refund-policy","cookie-policy","enquire","franchise-disclaimer","grievance-redressal","membership-terms","privacy-policy","terms-and-conditions"]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$12","s":"$f"},"c":"$Q13"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/10h22j1mabr2f.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2jyp5aciqubz-.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1owu2pzv51tey.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/13aejdl-em2cz.js","async":true}]],["$","html",null,{"lang":"en-IN","data-scroll-behavior":"smooth","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Marathi&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"suppressHydrationWarning":true,"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"http://localhost:3000/#organization\",\"name\":\"Sanatan Airlines\",\"legalName\":\"Sanatan Airlines Private Limited\",\"url\":\"http://localhost:3000\",\"logo\":\"http://localhost:3000/icon.svg\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Office No. 309, Elixa Park, Old Pune–Bangalore Highway, Shahupuri\",\"addressLocality\":\"Kolhapur\",\"addressRegion\":\"Maharashtra\",\"postalCode\":\"416001\",\"addressCountry\":\"IN\"}}"}}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","main",null,{"className":"not-found-page","children":[["$","span",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"This page is not available."}],["$","p",null,{"children":"The address may have changed, or the page may not exist."}],["$","$Ld",null,{"className":"button button-dark","href":"/","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":15,"height":15,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," Return to Sanatan Airlines"]}]]}],[]]}]]}]]}]]}]]}],"p":"$@e","v":null,"s":"$f"},"c":"$Q10"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1f",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$20",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Overseas Employment Assistance | Sanatan Airlines"}],["$","meta","1",{"name":"description","content":"Guidance and coordination for overseas employment enquiries, including profile and documentation support. Employers make hiring decisions; no job or visa is guaranteed."}],["$","link","2",{"rel":"canonical","href":"http://localhost:3000/global-services/employment"}],["$","meta","3",{"property":"og:title","content":"Overseas Employment Assistance | Sanatan Airlines"}],["$","meta","4",{"property":"og:description","content":"Guidance and coordination for overseas employment enquiries, including profile and documentation support. Employers make hiring decisions; no job or visa is guaranteed."}],["$","meta","5",{"property":"og:type","content":"website"}],"$L21","$L22","$L23","$L24","$L25","$L26"]}]}],null]}],null]}],"p":"$@27","v":null,"s":"$f"}},"a":"$@28","u":"$@29","b":"ze06lE6i1iA_CI_KXOVgz"}
+2a:I[14390,["$2","$3","$9","$a","$b","$c"],"default"]
+2b:I[97367,["$2","$3"],"OutletBoundary"]
+2d:I[27201,["$2","$3"],"IconMark"]
+14:["$","nav",null,{"className":"site-breadcrumbs","aria-label":"Breadcrumb","children":["$","ol",null,{"children":[["$","li","/",{"children":["$","$Ld",null,{"href":"/","children":"Home"}]}],["$","li","/global-services",{"children":["$","$Ld",null,{"href":"/global-services","children":"Global Services"}]}],["$","li","/global-services/employment",{"children":["$","span",null,{"aria-current":"page","children":"Overseas Employment Assistance"}]}]]}]}]
+15:["$","$L2a",null,{}]
+16:["$","script","script-0",{"src":"/_next/static/chunks/3yju3jx03cst8.js","async":true}]
+17:["$","script","script-1",{"src":"/_next/static/chunks/217okbiwbwsgz.js","async":true}]
+18:["$","script","script-2",{"src":"/_next/static/chunks/2srjn1_cvoqey.js","async":true}]
+19:["$","script","script-3",{"src":"/_next/static/chunks/11f378hlsigsy.js","async":true}]
+1a:["$","$L2b",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@2c"}]}]
+21:["$","meta","6",{"name":"twitter:card","content":"summary"}]
+22:["$","meta","7",{"name":"twitter:title","content":"Overseas Employment Assistance | Sanatan Airlines"}]
+23:["$","meta","8",{"name":"twitter:description","content":"Guidance and coordination for overseas employment enquiries, including profile and documentation support. Employers make hiring decisions; no job or visa is guaranteed."}]
+24:["$","link","9",{"rel":"icon","href":"/favicon.ico?favicon.1u048l6ueeqgo.ico","sizes":"32x32","type":"image/x-icon"}]
+25:["$","link","10",{"rel":"icon","href":"/icon.svg?icon.3fa74ju_p0bsy.svg","sizes":"any","type":"image/svg+xml"}]
+26:["$","$L2d","11",{}]
+f:300
+2c:null
+29:true
+f:C
+28:0
+11:"$undefined"
+e:"$undefined"
+27:"$undefined"
+1b:"$undefined"

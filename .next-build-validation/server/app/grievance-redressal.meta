@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/grievance-redressal/layout,_N_T_/grievance-redressal/page,_N_T_/grievance-redressal"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/grievance-redressal/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/782a130b28b31b2f6ca09c0d618ec5dd4560ba0415a6c6e1d0a4724fd301ded1/$/grievance-redressal",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/grievance-redressal/page"
+    },
+    "isFallback": false
+  }
+}

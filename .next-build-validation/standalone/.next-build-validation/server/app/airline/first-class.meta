@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/first-class/layout,_N_T_/airline/first-class/page,_N_T_/airline/first-class"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/first-class/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/e43e0264501e7b7d819ce5c61c950a3b10e14fa29425ddd0fcb499258516c2c9/$/airline/first-class",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/first-class/page"
+    },
+    "isFallback": false
+  }
+}

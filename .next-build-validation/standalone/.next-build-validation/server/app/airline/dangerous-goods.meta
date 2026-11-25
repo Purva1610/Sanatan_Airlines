@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/dangerous-goods/layout,_N_T_/airline/dangerous-goods/page,_N_T_/airline/dangerous-goods"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/dangerous-goods/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c0f60651480ba053b2da34b3c0f7a3f985b53be9c56d69324d7774f8e907d4cc/$/airline/dangerous-goods",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/dangerous-goods/page"
+    },
+    "isFallback": false
+  }
+}

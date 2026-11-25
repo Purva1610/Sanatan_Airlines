@@ -1,0 +1,36 @@
+{
+  "name": "sanatan-airlines-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "npm run typecheck",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run typecheck && npm run build",
+    "server": "node server/src/index.js",
+    "server:dev": "node --watch server/src/index.js",
+    "db:migrate": "node server/scripts/migrate.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "helmet": "^8.3.0",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6",
+    "next": "^16.4.5",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

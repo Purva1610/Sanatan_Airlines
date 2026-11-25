@@ -1,0 +1,3 @@
+import { SkyNovaRewardsPage } from '../../../src/airline/pages/MedicalAndLoyaltyPages.jsx';
+import PageSkin from '../../../src/PageSkin.jsx';
+export default function Page() { return <PageSkin route="/airline/skynova-rewards"><SkyNovaRewardsPage /></PageSkin>; }

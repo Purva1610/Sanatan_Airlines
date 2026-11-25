@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/check-in/layout,_N_T_/airline/check-in/page,_N_T_/airline/check-in"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/check-in/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c9b9d466d8c91090bb93a78e343640b68a62e878e525634b4eec53cb78047012/$/airline/check-in",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/check-in/page"
+    },
+    "isFallback": false
+  }
+}

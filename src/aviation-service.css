@@ -1,0 +1,823 @@
+/* Sanatan Aviation — aviation service pages */
+
+/* ---------------- Hero ---------------- */
+
+.sa-av-hero {
+  position: relative;
+  min-height: min(88vh, 820px);
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  background: var(--sa-navy);
+  overflow: hidden;
+}
+
+.sa-av-hero-media { position: absolute; inset: 0; }
+
+.sa-av-hero-media img { object-fit: cover; }
+
+.sa-av-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(96deg, rgba(10, 16, 53, 0.9) 0%, rgba(10, 16, 53, 0.68) 42%, rgba(10, 16, 53, 0.12) 78%),
+    linear-gradient(0deg, rgba(10, 16, 53, 0.58) 0%, rgba(10, 16, 53, 0) 42%);
+  pointer-events: none;
+}
+
+.sa-av-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding-block: 180px clamp(52px, 6.5vw, 80px);
+}
+
+.sa-av-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 26px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.sa-av-crumbs a { color: rgba(255, 255, 255, 0.72); transition: color 0.2s ease; }
+.sa-av-crumbs a:hover { color: var(--sa-gold-soft); }
+.sa-av-crumbs span[aria-current] { color: var(--sa-gold-soft); }
+
+.sa-av-hero h1 {
+  margin-top: 18px;
+  max-width: 17ch;
+  font-size: clamp(38px, 5.4vw, 66px);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.sa-av-hero h1 em {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--sa-gold-soft);
+}
+
+.sa-av-hero-inner .sa-av-hero-sub {
+  margin-top: 22px;
+  max-width: 640px;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.sa-av-hero-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.sa-av-trust { margin-top: 34px; }
+
+/* ---------------- Disclaimer bar ---------------- */
+
+.sa-av-disclaimer-bar {
+  background: var(--sa-sand);
+  border-bottom: 1px solid rgba(199, 75, 13, 0.4);
+}
+
+.sa-av-disclaimer-bar .sa-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-block: 15px;
+}
+
+.sa-av-disclaimer-bar svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: var(--sa-saffron-deep);
+}
+
+.sa-av-disclaimer-bar p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--sa-ink);
+}
+
+/* ---------------- Service switcher ---------------- */
+
+.sa-av-switcher {
+  background: #ffffff;
+  border-bottom: 1px solid var(--sa-line);
+}
+
+.sa-av-switcher .sa-container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.sa-av-switcher .sa-container::-webkit-scrollbar { display: none; }
+
+.sa-av-switcher a {
+  flex: 1 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 17px 22px;
+  border-bottom: 2px solid transparent;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--sa-muted);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.sa-av-switcher a small {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sa-gold);
+}
+
+.sa-av-switcher a:hover { color: var(--sa-navy); background: var(--sa-ivory); }
+
+.sa-av-switcher a.is-current {
+  color: var(--sa-navy);
+  border-bottom-color: var(--sa-saffron);
+}
+
+.sa-av-switcher a.is-current small { color: var(--sa-saffron-deep); }
+
+/* ---------------- Shared section heading ---------------- */
+
+.sa-av-section-head {
+  max-width: 760px;
+  margin-bottom: clamp(34px, 4.5vw, 54px);
+}
+
+.sa-av-section-head h2 {
+  margin-top: 16px;
+  font-size: clamp(30px, 3.9vw, 48px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.sa-av-section-head p {
+  margin-top: 16px;
+  max-width: 620px;
+  font-size: clamp(14.5px, 1.3vw, 16px);
+  line-height: 1.75;
+  color: var(--sa-muted);
+}
+
+.sa-section-navy .sa-av-section-head p { color: rgba(255, 255, 255, 0.68); }
+
+/* ---------------- Intro + benefits ---------------- */
+
+.sa-av-intro { max-width: 900px; margin-bottom: clamp(36px, 5vw, 58px); }
+
+.sa-av-intro-head h2 {
+  margin-top: 16px;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  max-width: 20ch;
+}
+
+.sa-av-intro-head p {
+  margin-top: 14px;
+  max-width: 730px;
+  font-size: clamp(14.5px, 1.3vw, 16px);
+  line-height: 1.8;
+  color: var(--sa-muted);
+}
+
+.sa-av-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sa-av-benefit {
+  padding: 28px 24px 30px;
+  border: 1px solid var(--sa-line);
+  border-radius: 18px;
+  background: #ffffff;
+  transition: transform 0.35s var(--sa-ease), box-shadow 0.35s var(--sa-ease), border-color 0.35s var(--sa-ease);
+}
+
+.sa-av-benefit:hover {
+  transform: translateY(-4px);
+  border-color: rgba(199, 75, 13, 0.65);
+  box-shadow: 0 24px 52px rgba(14, 22, 74, 0.09);
+}
+
+.sa-av-benefit-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--sa-ivory);
+  color: var(--sa-saffron-deep);
+  border: 1px solid rgba(199, 75, 13, 0.35);
+  margin-bottom: 20px;
+}
+
+.sa-av-benefit h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 9px;
+}
+
+.sa-av-benefit p {
+  font-size: 13px;
+  line-height: 1.72;
+  color: var(--sa-muted);
+}
+
+/* ---------------- Use cases ---------------- */
+
+.sa-av-use-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sa-av-use {
+  padding: 26px 24px 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(199, 75, 13, 0.28);
+  background: #ffffff;
+  transition: transform 0.35s var(--sa-ease), box-shadow 0.35s var(--sa-ease), border-color 0.35s var(--sa-ease);
+}
+
+.sa-av-use:hover {
+  transform: translateY(-3px);
+  border-color: rgba(199, 75, 13, 0.7);
+  box-shadow: 0 20px 44px rgba(14, 22, 74, 0.08);
+}
+
+.sa-av-use > span {
+  display: block;
+  margin-bottom: 14px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--sa-gold);
+}
+
+.sa-av-use h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.sa-av-use p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--sa-muted);
+}
+
+/* ---------------- Image band ---------------- */
+
+.sa-av-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--sa-navy);
+  color: #ffffff;
+}
+
+.sa-av-band-media {
+  position: relative;
+  min-height: 480px;
+}
+
+.sa-av-band-media img { object-fit: cover; }
+
+.sa-av-band-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(48px, 6.5vw, 92px) clamp(28px, 6vw, 88px);
+}
+
+.sa-av-band-copy .sa-eyebrow { color: var(--sa-gold-soft); }
+
+.sa-av-band-copy blockquote {
+  margin: 20px 0 18px;
+  max-width: 20ch;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.sa-av-band-copy > p {
+  max-width: 460px;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.sa-av-band-copy .sa-why-values { margin-top: 28px; }
+
+/* ---------------- Steps ---------------- */
+
+.sa-av-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sa-av-steps li {
+  position: relative;
+  padding: 28px 24px 30px;
+  border: 1px solid var(--sa-line);
+  border-radius: 18px;
+  background: #fcfbf8;
+}
+
+.sa-av-step-number {
+  display: block;
+  margin-bottom: 16px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--sa-gold);
+}
+
+.sa-av-steps h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.sa-av-steps p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--sa-muted);
+}
+
+.sa-av .sa-av-advisory-note {
+  margin-top: 26px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 880px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(199, 75, 13, 0.45);
+  background: var(--sa-ivory);
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--sa-ink);
+}
+
+.sa-av-advisory-note svg { flex: 0 0 auto; margin-top: 1px; color: var(--sa-saffron-deep); }
+
+/* ---------------- Enquiry ---------------- */
+
+.sa-av-enquiry { position: relative; overflow: hidden; }
+
+.sa-av-enquiry::before {
+  content: '';
+  position: absolute;
+  left: -200px;
+  bottom: -240px;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(199, 75, 13, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.sa-av-enquiry-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 4vw, 64px);
+  align-items: start;
+}
+
+.sa-av-enquiry-copy h2 {
+  margin-top: 16px;
+  font-size: clamp(30px, 3.9vw, 48px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.sa-av-enquiry-copy > p {
+  margin-top: 18px;
+  max-width: 460px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--sa-muted);
+}
+
+.sa-av-enquiry-note {
+  margin-top: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(199, 75, 13, 0.4);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.sa-av-enquiry-note svg { flex: 0 0 auto; margin-top: 1px; color: var(--sa-saffron-deep); }
+
+.sa-av-enquiry-note p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--sa-ink);
+}
+
+.sa-av-speak { margin-top: 24px; }
+
+.sa-av-form { align-self: start; }
+
+.sa-av-form-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(173, 62, 14, 0.38);
+  background: #fbf8f2;
+}
+
+.sa-av-form-alert svg { flex: 0 0 auto; margin-top: 1px; color: var(--sa-saffron-deep); }
+.sa-av-form-alert p { font-size: 11.5px; line-height: 1.6; color: var(--sa-ink); }
+
+.sa-av-checkbox {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sa-ink);
+}
+
+.sa-av-checkbox input { accent-color: var(--sa-saffron); width: 16px; height: 16px; }
+
+.sa-av-form .sa-av-form-disclaimer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--sa-line);
+  font-size: 10.5px;
+  line-height: 1.65;
+  color: #7c8290;
+}
+
+/* ---------------- FAQs ---------------- */
+
+.sa-av-faq-wrap { max-width: var(--sa-container); }
+
+.sa-av-faqs {
+  display: grid;
+  gap: 12px;
+  max-width: 920px;
+}
+
+.sa-av-faqs details {
+  border: 1px solid var(--sa-line);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 0 24px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sa-av-faqs details[open] {
+  border-color: rgba(199, 75, 13, 0.55);
+  box-shadow: 0 16px 36px rgba(14, 22, 74, 0.06);
+}
+
+.sa-av-faqs summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 19px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--sa-ink);
+}
+
+.sa-av-faqs summary::-webkit-details-marker { display: none; }
+
+.sa-av-faqs summary span {
+  flex: 0 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--sa-saffron-deep);
+  transition: transform 0.25s var(--sa-ease);
+}
+
+.sa-av-faqs details[open] summary span { transform: rotate(45deg); }
+
+.sa-av-faqs details > p {
+  margin: 0 0 20px;
+  padding-right: 28px;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--sa-muted);
+}
+
+/* ---------------- Related services ---------------- */
+
+.sa-av-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sa-av-related-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  color: #ffffff;
+  transition: transform 0.35s var(--sa-ease), background 0.35s var(--sa-ease), border-color 0.35s var(--sa-ease);
+}
+
+.sa-av-related-grid a > span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sa-gold-soft);
+}
+
+.sa-av-related-grid a h3 {
+  font-size: clamp(17px, 1.6vw, 21px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.sa-av-related-grid a svg {
+  margin-top: 20px;
+  color: var(--sa-gold-soft);
+  transition: transform 0.3s var(--sa-ease);
+}
+
+.sa-av-related-grid a:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(199, 75, 13, 0.6);
+}
+
+.sa-av-related-grid a:hover svg { transform: translate(3px, -3px); }
+
+.sa-av-related .sa-av-related-foot {
+  margin-top: 28px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+/* ---------------- Sticky CTA ---------------- */
+
+.sa-av-sticky {
+  position: fixed;
+  left: clamp(16px, 3vw, 36px);
+  bottom: clamp(16px, 3vw, 28px);
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 11px 11px 11px 22px;
+  border-radius: 999px;
+  background: rgba(14, 22, 74, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 48px rgba(14, 22, 74, 0.32);
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.35s var(--sa-ease), transform 0.35s var(--sa-ease);
+}
+
+.sa-av-sticky.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sa-av-sticky-label {
+  display: grid;
+  gap: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.sa-av-sticky-label small {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sa-gold-soft);
+}
+
+.sa-av-sticky .sa-btn {
+  min-height: 42px;
+  padding: 0 19px;
+  font-size: 10.5px;
+  gap: 8px;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 1080px) {
+  .sa-av-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sa-av-use-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sa-av-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sa-av-enquiry-grid { grid-template-columns: 1fr; }
+  .sa-av-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .sa-av-hero { min-height: 0; }
+  .sa-av-hero-inner { padding-block: 148px 60px; }
+  .sa-av-band { grid-template-columns: 1fr; }
+  .sa-av-band-media { min-height: 340px; }
+  .sa-av-band-copy { padding-block: 52px; }
+}
+
+@media (max-width: 700px) {
+  .sa-av-hero::after {
+    background:
+      linear-gradient(180deg, rgba(10, 16, 53, 0.72) 0%, rgba(10, 16, 53, 0.5) 40%, rgba(10, 16, 53, 0.86) 100%);
+  }
+
+  .sa-av-hero-inner { padding-block: 132px 52px; }
+  .sa-av-crumbs { gap: 8px; font-size: 9.5px; }
+
+  .sa-av-hero h1 { max-width: none; font-size: clamp(34px, 9vw, 44px); }
+  .sa-av-hero-sub { margin-top: 18px; font-size: 14.5px; }
+
+  .sa-av-hero-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .sa-av-hero-actions .sa-btn { width: 100%; }
+
+  .sa-av-trust { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+
+  .sa-av-switcher .sa-container {
+    padding-inline: 20px;
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 44px), transparent 100%);
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 44px), transparent 100%);
+  }
+  .sa-av-switcher a { flex: 0 0 auto; padding: 14px 16px; font-size: 10px; }
+
+  .sa-av-benefits,
+  .sa-av-use-grid,
+  .sa-av-steps,
+  .sa-av-related-grid { grid-template-columns: 1fr; }
+
+  .sa-av-band-media { min-height: 280px; }
+  .sa-av-band-copy { padding: 44px 24px 52px; }
+  .sa-av-band-copy blockquote { max-width: none; font-size: 26px; }
+
+  .sa-av-form .sa-form-grid { grid-template-columns: 1fr; }
+
+  .sa-av-disclaimer-bar .sa-container { padding-inline: 20px; }
+  .sa-av-disclaimer-bar p { font-size: 11.5px; }
+
+  .sa-av-sticky {
+    left: 12px;
+    right: 12px;
+    bottom: 88px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 9px 9px 16px;
+    border-radius: 16px;
+  }
+
+  .sa-av-sticky-label { font-size: 11px; white-space: normal; }
+  .sa-av-sticky-label small { display: none; }
+  .sa-av-sticky .sa-btn { min-height: 40px; padding: 0 14px; font-size: 9.5px; letter-spacing: 0.08em; }
+
+  .sa-av-faqs details { padding: 0 18px; }
+  .sa-av-faqs summary { font-size: 13.5px; }
+  .sa-av-faqs details > p { padding-right: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sa-av-benefit,
+  .sa-av-use,
+  .sa-av-related-grid a,
+  .sa-av-sticky { transition: none; }
+}
+
+/* ==========================================================================
+   Aviation template v2 (brief §7.1) — grouped forms, toggle, emergency
+   notice and compliance note. Markup: src/AviationServicePage.jsx
+   ========================================================================== */
+
+/* Grouped form sections */
+.sa-av-fieldset { border: 0; margin: 0 0 22px; padding: 0; min-width: 0; }
+.sa-av-fieldset legend {
+  display: block; width: 100%; padding: 0 0 10px; margin-bottom: 14px;
+  border-bottom: 1px solid var(--sa-line);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--sa-saffron-deep);
+}
+.sa-av-optional { font-style: normal; font-weight: 500; color: var(--sa-muted); }
+.sa-av-hint { display: block; font-size: 11.5px; font-weight: 500; line-height: 1.5; color: var(--sa-muted); }
+.sa-av-required-note { margin: -6px 0 0; font-size: 11.5px; color: var(--sa-muted); }
+.sa-av-required-note b { color: var(--sa-saffron-deep); }
+.sa-field :is(input, select, textarea):user-invalid { border-color: #b42318; }
+
+/* Flexible-date switch */
+.sa-av-toggle { display: grid; gap: 4px; }
+.sa-av-toggle label { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--sa-ink); }
+.sa-av-toggle input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.sa-av-toggle-track {
+  position: relative; flex: 0 0 auto; width: 44px; height: 24px; border-radius: 999px;
+  background: rgba(17, 27, 90, 0.18); transition: background 0.2s ease;
+}
+.sa-av-toggle-track::after {
+  content: ''; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%;
+  background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); transition: transform 0.2s ease;
+}
+.sa-av-toggle input:checked + .sa-av-toggle-track { background: var(--sa-saffron); }
+.sa-av-toggle input:checked + .sa-av-toggle-track::after { transform: translateX(20px); }
+.sa-av-toggle input:focus-visible + .sa-av-toggle-track { outline: 2px solid var(--sa-gold); outline-offset: 3px; }
+.sa-av-toggle small { font-size: 11.5px; color: var(--sa-muted); padding-left: 56px; }
+
+/* Emergency notice — deliberately NOT gold: it must read as a warning */
+.sa-av-emergency {
+  display: flex; gap: 14px; align-items: flex-start;
+  max-width: 660px; margin: 26px 0 4px; padding: 16px 18px;
+  border-radius: 14px; border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(122, 26, 18, 0.88); color: #fff;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.sa-av-emergency svg { flex: 0 0 auto; margin-top: 2px; }
+.sa-av-emergency p { margin: 0; font-size: 14px; line-height: 1.55; color: inherit; }
+.sa-av-emergency-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.sa-av-emergency-actions a {
+  display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 16px; border-radius: 999px;
+  background: #fff; color: #7a1a12; font-size: 13px; font-weight: 800;
+}
+.sa-av-emergency-actions small { font-weight: 600; opacity: 0.75; }
+.sa-av-emergency.is-compact { max-width: none; margin: 0 0 20px; background: #fdf1ef; border-color: #f0c8c2; color: #6e1a13; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.sa-av-emergency.is-compact .sa-av-emergency-actions a { background: #8f2219; color: #fff; }
+
+/* Compliance note */
+.sa-av-compliance { background: var(--sa-sand, #f3eee4); border-top: 1px solid var(--sa-line); padding: clamp(36px, 5vw, 56px) 0; }
+.sa-av-compliance .sa-container { display: flex; gap: 18px; align-items: flex-start; }
+.sa-av-compliance svg { flex: 0 0 auto; color: var(--sa-saffron-deep); margin-top: 2px; }
+.sa-av-compliance h2 { font-size: 13px !important; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sa-ink); margin: 0 0 10px; }
+.sa-av-compliance p { max-width: 860px; margin: 0 0 8px; font-size: 14px; line-height: 1.65; color: var(--sa-muted); }
+.sa-av-compliance a { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--sa-saffron-deep); }
+
+/* Seven services in the switcher: scroll horizontally rather than wrap */
+.sa-av-switcher .sa-container { overflow-x: auto; scrollbar-width: none; }
+.sa-av-switcher a { white-space: nowrap; }
+
+@media (max-width: 700px) {
+  .sa-av-emergency { padding: 14px; }
+  .sa-av-emergency-actions a { flex: 1 1 100%; justify-content: center; }
+  .sa-av-compliance .sa-container { flex-direction: column; gap: 10px; }
+}
+
+/* Checklist beside the form sits on ivory, not navy */
+.sa-page.sa-av .sa-av-enquiry .sa-consult-point { color: var(--sa-ink) !important; } /* home-premium.css @scope (.sa-page) sets white for the home page's dark section */
+.sa-page.sa-av .sa-av-enquiry .sa-consult-point svg { color: var(--sa-saffron-deep) !important; }
+
+@media (max-width: 700px) {
+  /* Keep the emergency call button on one line on phones */
+  .sa-av-emergency-actions small { display: none; }
+}

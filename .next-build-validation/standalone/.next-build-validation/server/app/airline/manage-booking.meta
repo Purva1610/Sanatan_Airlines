@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/manage-booking/layout,_N_T_/airline/manage-booking/page,_N_T_/airline/manage-booking"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/manage-booking/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/f7b835559fb6ece7bc46658b7cfb826605e143d0055bbeed63d506b07f9a9991/$/airline/manage-booking",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/manage-booking/page"
+    },
+    "isFallback": false
+  }
+}

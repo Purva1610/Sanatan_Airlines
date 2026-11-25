@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/enquiry/layout,_N_T_/airline/enquiry/page,_N_T_/airline/enquiry"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/enquiry/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/b82e865eb366afcd3864749aed962450825136fc489ac59645e16fe302cf6fa3/$/airline/enquiry",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/enquiry/page"
+    },
+    "isFallback": false
+  }
+}

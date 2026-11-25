@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/franchise-disclaimer/layout,_N_T_/franchise-disclaimer/page,_N_T_/franchise-disclaimer"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/franchise-disclaimer/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/06193c58263c8156e790a567b429a34c98658fd2a0df6999ae1f523415aa9f15/$/franchise-disclaimer",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/franchise-disclaimer/page"
+    },
+    "isFallback": false
+  }
+}

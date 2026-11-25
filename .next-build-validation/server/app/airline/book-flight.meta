@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/book-flight/layout,_N_T_/airline/book-flight/page,_N_T_/airline/book-flight"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/book-flight/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/834118d1a04184f95e137113d8e0a1ff10af559864684620acb1b436a61b9810/$/airline/book-flight",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/book-flight/page"
+    },
+    "isFallback": false
+  }
+}

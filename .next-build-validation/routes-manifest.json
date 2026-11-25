@@ -1,0 +1,477 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/aviation/concierge",
+      "destination": "/aviation/aviation-concierge",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/aviation/concierge(?:/)?$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/[...slug]",
+      "regex": "^/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPslug>.+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/accessibility",
+      "regex": "^/accessibility(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/accessibility(?:/)?$"
+    },
+    {
+      "page": "/airline",
+      "regex": "^/airline(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline(?:/)?$"
+    },
+    {
+      "page": "/airline/about",
+      "regex": "^/airline/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/about(?:/)?$"
+    },
+    {
+      "page": "/airline/airport-lounges",
+      "regex": "^/airline/airport\\-lounges(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/airport\\-lounges(?:/)?$"
+    },
+    {
+      "page": "/airline/baggage",
+      "regex": "^/airline/baggage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/baggage(?:/)?$"
+    },
+    {
+      "page": "/airline/book-flight",
+      "regex": "^/airline/book\\-flight(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/book\\-flight(?:/)?$"
+    },
+    {
+      "page": "/airline/business-class",
+      "regex": "^/airline/business\\-class(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/business\\-class(?:/)?$"
+    },
+    {
+      "page": "/airline/car-rental",
+      "regex": "^/airline/car\\-rental(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/car\\-rental(?:/)?$"
+    },
+    {
+      "page": "/airline/cargo-services",
+      "regex": "^/airline/cargo\\-services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/cargo\\-services(?:/)?$"
+    },
+    {
+      "page": "/airline/check-in",
+      "regex": "^/airline/check\\-in(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/check\\-in(?:/)?$"
+    },
+    {
+      "page": "/airline/contact",
+      "regex": "^/airline/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/contact(?:/)?$"
+    },
+    {
+      "page": "/airline/corporate-travel",
+      "regex": "^/airline/corporate\\-travel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/corporate\\-travel(?:/)?$"
+    },
+    {
+      "page": "/airline/dangerous-goods",
+      "regex": "^/airline/dangerous\\-goods(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/dangerous\\-goods(?:/)?$"
+    },
+    {
+      "page": "/airline/destinations",
+      "regex": "^/airline/destinations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/destinations(?:/)?$"
+    },
+    {
+      "page": "/airline/economy-class",
+      "regex": "^/airline/economy\\-class(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/economy\\-class(?:/)?$"
+    },
+    {
+      "page": "/airline/enquiry",
+      "regex": "^/airline/enquiry(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/enquiry(?:/)?$"
+    },
+    {
+      "page": "/airline/excess-baggage",
+      "regex": "^/airline/excess\\-baggage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/excess\\-baggage(?:/)?$"
+    },
+    {
+      "page": "/airline/express-cargo",
+      "regex": "^/airline/express\\-cargo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/express\\-cargo(?:/)?$"
+    },
+    {
+      "page": "/airline/extra-legroom",
+      "regex": "^/airline/extra\\-legroom(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/extra\\-legroom(?:/)?$"
+    },
+    {
+      "page": "/airline/first-class",
+      "regex": "^/airline/first\\-class(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/first\\-class(?:/)?$"
+    },
+    {
+      "page": "/airline/flexible-fares",
+      "regex": "^/airline/flexible\\-fares(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/flexible\\-fares(?:/)?$"
+    },
+    {
+      "page": "/airline/flight-status",
+      "regex": "^/airline/flight\\-status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/flight\\-status(?:/)?$"
+    },
+    {
+      "page": "/airline/gift-vouchers",
+      "regex": "^/airline/gift\\-vouchers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/gift\\-vouchers(?:/)?$"
+    },
+    {
+      "page": "/airline/group-travel",
+      "regex": "^/airline/group\\-travel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/group\\-travel(?:/)?$"
+    },
+    {
+      "page": "/airline/hotel-flight",
+      "regex": "^/airline/hotel\\-flight(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/hotel\\-flight(?:/)?$"
+    },
+    {
+      "page": "/airline/in-flight-dining",
+      "regex": "^/airline/in\\-flight\\-dining(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/in\\-flight\\-dining(?:/)?$"
+    },
+    {
+      "page": "/airline/in-flight-entertainment",
+      "regex": "^/airline/in\\-flight\\-entertainment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/in\\-flight\\-entertainment(?:/)?$"
+    },
+    {
+      "page": "/airline/live-animals-cargo",
+      "regex": "^/airline/live\\-animals\\-cargo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/live\\-animals\\-cargo(?:/)?$"
+    },
+    {
+      "page": "/airline/manage-booking",
+      "regex": "^/airline/manage\\-booking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/manage\\-booking(?:/)?$"
+    },
+    {
+      "page": "/airline/medical-clearance",
+      "regex": "^/airline/medical\\-clearance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/medical\\-clearance(?:/)?$"
+    },
+    {
+      "page": "/airline/military-fares",
+      "regex": "^/airline/military\\-fares(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/military\\-fares(?:/)?$"
+    },
+    {
+      "page": "/airline/multi-city",
+      "regex": "^/airline/multi\\-city(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/multi\\-city(?:/)?$"
+    },
+    {
+      "page": "/airline/musical-instruments",
+      "regex": "^/airline/musical\\-instruments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/musical\\-instruments(?:/)?$"
+    },
+    {
+      "page": "/airline/our-fleet",
+      "regex": "^/airline/our\\-fleet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/our\\-fleet(?:/)?$"
+    },
+    {
+      "page": "/airline/pet-travel",
+      "regex": "^/airline/pet\\-travel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/pet\\-travel(?:/)?$"
+    },
+    {
+      "page": "/airline/premium-economy",
+      "regex": "^/airline/premium\\-economy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/premium\\-economy(?:/)?$"
+    },
+    {
+      "page": "/airline/round-the-world",
+      "regex": "^/airline/round\\-the\\-world(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/round\\-the\\-world(?:/)?$"
+    },
+    {
+      "page": "/airline/seat-selection",
+      "regex": "^/airline/seat\\-selection(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/seat\\-selection(?:/)?$"
+    },
+    {
+      "page": "/airline/senior-fares",
+      "regex": "^/airline/senior\\-fares(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/senior\\-fares(?:/)?$"
+    },
+    {
+      "page": "/airline/skynova-rewards",
+      "regex": "^/airline/skynova\\-rewards(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/skynova\\-rewards(?:/)?$"
+    },
+    {
+      "page": "/airline/special-assistance",
+      "regex": "^/airline/special\\-assistance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/special\\-assistance(?:/)?$"
+    },
+    {
+      "page": "/airline/sports-equipment",
+      "regex": "^/airline/sports\\-equipment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/sports\\-equipment(?:/)?$"
+    },
+    {
+      "page": "/airline/student-fares",
+      "regex": "^/airline/student\\-fares(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/student\\-fares(?:/)?$"
+    },
+    {
+      "page": "/airline/sustainability",
+      "regex": "^/airline/sustainability(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/sustainability(?:/)?$"
+    },
+    {
+      "page": "/airline/travel-insurance",
+      "regex": "^/airline/travel\\-insurance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/travel\\-insurance(?:/)?$"
+    },
+    {
+      "page": "/airline/unaccompanied-minors",
+      "regex": "^/airline/unaccompanied\\-minors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/unaccompanied\\-minors(?:/)?$"
+    },
+    {
+      "page": "/airline/wheelchair-assistance",
+      "regex": "^/airline/wheelchair\\-assistance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/airline/wheelchair\\-assistance(?:/)?$"
+    },
+    {
+      "page": "/api/assistant",
+      "regex": "^/api/assistant(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/assistant(?:/)?$"
+    },
+    {
+      "page": "/api/enquiry",
+      "regex": "^/api/enquiry(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/enquiry(?:/)?$"
+    },
+    {
+      "page": "/aviation-disclaimer",
+      "regex": "^/aviation\\-disclaimer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/aviation\\-disclaimer(?:/)?$"
+    },
+    {
+      "page": "/cancellation-refund-policy",
+      "regex": "^/cancellation\\-refund\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cancellation\\-refund\\-policy(?:/)?$"
+    },
+    {
+      "page": "/cookie-policy",
+      "regex": "^/cookie\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cookie\\-policy(?:/)?$"
+    },
+    {
+      "page": "/enquire",
+      "regex": "^/enquire(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/enquire(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/franchise-disclaimer",
+      "regex": "^/franchise\\-disclaimer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/franchise\\-disclaimer(?:/)?$"
+    },
+    {
+      "page": "/grievance-redressal",
+      "regex": "^/grievance\\-redressal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/grievance\\-redressal(?:/)?$"
+    },
+    {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
+      "page": "/membership-terms",
+      "regex": "^/membership\\-terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/membership\\-terms(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/terms-and-conditions",
+      "regex": "^/terms\\-and\\-conditions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms\\-and\\-conditions(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

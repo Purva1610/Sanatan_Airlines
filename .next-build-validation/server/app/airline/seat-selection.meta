@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/seat-selection/layout,_N_T_/airline/seat-selection/page,_N_T_/airline/seat-selection"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/seat-selection/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/9ff8c39be6c0ea6a3fee331939453260f6a9f92004a71aceace55267018f4983/$/airline/seat-selection",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/seat-selection/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/hotel-flight/layout,_N_T_/airline/hotel-flight/page,_N_T_/airline/hotel-flight"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/hotel-flight/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/255dae8db5daa04550fd25b4c0a49d3e27a14ed0cb4f397fecdbab4558c04be2/$/airline/hotel-flight",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/hotel-flight/page"
+    },
+    "isFallback": false
+  }
+}

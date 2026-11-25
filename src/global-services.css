@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Global Services (brief: information vs consultation vs regulated delivery,
+   partner disclosure, service-specific forms). Markup: src/GlobalServicesPage.jsx
+   Imported after chrome.css.
+   ========================================================================== */
+
+/* ---------- Three stages ---------- */
+.global-stage-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+}
+.global-stage {
+  position: relative; display: grid; align-content: start; gap: 10px;
+  padding: 26px 24px 24px; border-radius: 18px;
+  background: #fff; border: 1px solid var(--b-line);
+}
+.global-stage-top { display: flex; align-items: center; justify-content: space-between; color: var(--b-gold-ink); }
+.global-stage-step { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--b-slate); }
+.global-stage h3 { margin: 4px 0 0; font-family: var(--b-display); font-size: 24px; font-weight: 600; color: var(--b-navy-900); }
+.global-stage p { margin: 0; font-family: var(--b-sans); font-size: 14px; line-height: 1.6; color: var(--b-slate); }
+.global-stage .global-stage-who { font-size: 13px; font-weight: 700; color: var(--b-navy-800); }
+.global-stage-who span { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--b-grey); }
+.global-stage .global-stage-role { padding-top: 12px; margin-top: 4px; border-top: 1px solid var(--b-line); font-size: 13px; color: var(--b-charcoal); }
+/* Regulated delivery reads differently: it is NOT done by Sanatan */
+.global-stage-delivery { background: var(--b-navy-900); border-color: var(--b-navy-900); }
+.global-stage-delivery h3, .global-stage-delivery .global-stage-who { color: #fff; }
+.global-stage-delivery p, .global-stage-delivery .global-stage-role { color: rgba(255, 255, 255, 0.78); border-color: rgba(255, 255, 255, 0.14); }
+.global-stage-delivery .global-stage-top, .global-stage-delivery .global-stage-who span { color: var(--b-gold-soft); }
+.global-stage-delivery .global-stage-step { color: rgba(255, 255, 255, 0.6); }
+
+/* ---------- Partner disclosure ---------- */
+.global-partners { background: var(--b-ivory-2); }
+.global-partners-body { display: grid; gap: 14px; max-width: 980px; }
+.global-partners-empty, .global-partners-verify {
+  display: flex; gap: 12px; align-items: flex-start; margin: 0;
+  font-family: var(--b-sans); font-size: 14.5px; line-height: 1.6; color: var(--b-charcoal);
+}
+.global-partners-empty { padding: 20px 22px; border-radius: 14px; background: #fff; border: 1px dashed var(--b-gold); }
+.global-partners-empty svg, .global-partners-verify svg { flex: 0 0 auto; margin-top: 3px; color: var(--b-gold-ink); }
+.global-partners-verify { font-size: 13.5px; color: var(--b-slate); }
+.global-partners-verify a { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--b-gold-ink); text-decoration: underline; text-underline-offset: 3px; }
+.global-partner-table-wrap { overflow-x: auto; border-radius: 14px; border: 1px solid var(--b-line); background: #fff; }
+.global-partner-table { width: 100%; border-collapse: collapse; font-family: var(--b-sans); font-size: 14px; }
+.global-partner-table :is(th, td) { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--b-line); }
+.global-partner-table thead th { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--b-slate); background: var(--b-ivory); }
+.global-partner-table small { display: block; color: var(--b-slate); }
+
+/* ---------- Hero warning (employment, investment) ---------- */
+.global-hero-alert {
+  display: flex; gap: 10px; align-items: flex-start; max-width: 560px; margin: 18px 0 0; padding: 14px 16px;
+  border-radius: 12px; background: #fdf3e7; border: 1px solid #fccd9d; color: #762a0a;
+  font-family: var(--b-sans); font-size: 13.5px; line-height: 1.55;
+}
+.global-hero-alert svg { flex: 0 0 auto; margin-top: 2px; color: #9f390d; }
+
+/* ---------- Form ---------- */
+.global-optional { font-style: normal; font-weight: 500; color: var(--b-slate); }
+.global-required-note { margin: 4px 0 10px; font-family: var(--b-sans); font-size: 12px; color: var(--b-slate); }
+.global-required-note b { color: var(--b-gold-ink); }
+.global-field small { font-family: var(--b-sans); font-size: 12px; line-height: 1.5; color: var(--b-slate); }
+.global-field input[type='file'] { padding: 10px; background: #fff; }
+/* Legibility: the original consent text was 9px */
+.global-consent { font-size: 12.5px !important; line-height: 1.6 !important; color: var(--b-charcoal) !important; }
+.global-consent input { width: 18px !important; height: 18px !important; margin-top: 2px !important; accent-color: var(--b-gold-ink) !important; }
+.global-consent-strong { padding: 14px 16px; border-radius: 12px; background: var(--b-ivory-2); border: 1px solid var(--b-line); }
+.global-hero-note { font-size: 12px !important; }
+.global-form-note { font-size: 12px !important; }
+
+@media (max-width: 900px) {
+  .global-stage-grid { grid-template-columns: 1fr; }
+}
+
+/* Hero warning sits on a photo where hero text is forced white — make it a dark panel */
+.global-service-hero .global-hero-alert {
+  background: rgba(13, 20, 68, 0.78); border-color: rgba(253, 175, 111, 0.55);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.global-service-hero .global-hero-alert,
+.global-service-hero .global-hero-alert span { color: #fff !important; font-size: 13.5px !important; }
+.global-service-hero .global-hero-alert svg { color: var(--b-gold-soft); }
+
+/* Legibility floor for the Global Services pages (legacy styles used 8–10px type) */
+.global-page :is(.global-field > span, .global-form-divider span) { font-size: 12.5px !important; letter-spacing: 0.02em; }
+.global-page .global-field :is(input, select, textarea) { font-size: 14.5px !important; }
+.global-page .global-editorial-heading p,
+.global-page .global-enquiry-intro p,
+.global-page .global-type-grid p,
+.global-page .global-process-grid p,
+.global-page .global-faq-list p { font-size: 15px !important; line-height: 1.65 !important; }
+.global-page .eyebrow { font-size: 11px !important; }
+.global-page .global-service-hero-copy > p { font-size: 16px !important; }
+.global-page .global-trust-indicators span { font-size: 11.5px !important; }
+.global-page .global-enquiry-intro > span { font-size: 12.5px !important; }

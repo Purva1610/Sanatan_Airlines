@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/live-animals-cargo/layout,_N_T_/airline/live-animals-cargo/page,_N_T_/airline/live-animals-cargo"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/live-animals-cargo/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/e6e8f00a5616e7f2e2f63896955a66a355de062e31bb9e9ce220150c487f94e8/$/airline/live-animals-cargo",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/live-animals-cargo/page"
+    },
+    "isFallback": false
+  }
+}

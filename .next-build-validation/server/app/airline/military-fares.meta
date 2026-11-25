@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/military-fares/layout,_N_T_/airline/military-fares/page,_N_T_/airline/military-fares"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/military-fares/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/7517e3b29e0fb82f4cf3d01ee34da1e32b2ecd54889018b09e8633f31098d136/$/airline/military-fares",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/military-fares/page"
+    },
+    "isFallback": false
+  }
+}

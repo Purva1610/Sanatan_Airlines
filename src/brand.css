@@ -1,0 +1,353 @@
+/* ==========================================================================
+   Sanatan — Brand layer (brief §2: Brand positioning & design direction)
+   --------------------------------------------------------------------------
+   Imported LAST in app/layout.tsx. Owns the palette tokens, surfaces,
+   typography and motion limits. Hardcoded colours in the older stylesheets
+   were remapped to this palette by a one-off codemod (royal blue -> navy,
+   flame orange -> champagne gold, pale blue -> ivory).
+
+   Premium ≠ dark + gold everywhere: ivory/white surfaces carry most of the
+   page; navy is for heroes, footer and the occasional feature band; gold is
+   an accent (rules, eyebrows, primary CTA), never a fill for large areas.
+   ========================================================================== */
+
+/* Global reset (client request: "make margin and padding of the website zero").
+   Zero specificity: removes browser-default spacing (body 8px, h1–h6/p/ul margins,
+   list/fieldset padding) while every component's own spacing still applies. */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+:root {
+  /* Primary */
+  /* Client direction: BLUE instead of navy, ORANGE instead of gold.
+     (Token names kept as navy/gold so every existing rule picks up the new colours.) */
+  --b-navy-950: #121f7a;   /* deepest blue — overlays */
+  --b-navy-900: #1a2ca3;   /* royal blue — heroes, footer, dark bands */
+  --b-navy-800: #2337b8;   /* blue */
+  --b-navy-700: #2f4fd6;   /* bright blue — hover */
+  --b-charcoal: #1e2228;   /* deep charcoal — body text */
+  --b-gold:      #f97316;  /* orange — decorative rules, icons, accents (not for small text) */
+  --b-gold-ink:  #c2410c;  /* deep orange — text & buttons on white/ivory (5.2:1) */
+  --b-gold-soft: #fdba74;  /* light orange — text on blue (≥4.5:1 on #1a2ca3) */
+  --b-gold-tint: #ffedd5;  /* orange tint */
+  --b-ivory:     #faf7f1;  /* page background */
+  --b-ivory-2:   #f3eee4;  /* alternate band */
+  --b-white:     #ffffff;
+
+  /* Supporting */
+  --b-slate:     #5b6472;  /* muted slate — secondary text */
+  --b-grey:      #8d939c;
+  --b-line:      #e4ded2;  /* soft warm-grey hairline */
+  --b-teal:      #2e6b66;  /* restrained teal — status / supporting info */
+  --b-teal-tint: #e3efed;
+
+  /* Type */
+  --b-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --b-sans: 'Manrope', 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Map onto the legacy tokens in styles.css / premium.css */
+  --ink: var(--b-navy-800);
+  --ink-soft: var(--b-navy-700);
+  --teal: var(--b-gold-ink);
+  --teal-pale: var(--b-gold-tint);
+  --gold: var(--b-gold);
+  --paper: var(--b-ivory);
+  --muted: var(--b-slate);
+  --line: var(--b-line);
+  --color-primary: var(--b-navy-800);
+  --color-secondary: var(--b-navy-700);
+  --color-accent: var(--b-gold-ink);
+  --color-neutral-100: var(--b-white);
+  --color-neutral-200: var(--b-ivory-2);
+  --color-neutral-400: var(--b-line);
+  --color-neutral-700: var(--b-slate);
+  --color-success: var(--b-teal);
+  --surface-default: var(--b-ivory);
+  --text-primary: var(--b-charcoal);
+  --text-secondary: var(--b-slate);
+  --display: var(--b-display);
+  --body: var(--b-sans);
+  --shadow-header: 0 1px 0 rgba(18, 28, 95, 0.08);
+  --shadow-menu: 0 18px 40px -12px rgba(18, 28, 95, 0.18);
+  --shadow-floating: 0 6px 22px rgba(18, 28, 95, 0.18);
+
+  --p-shadow: 0 1px 2px rgba(18, 28, 95, 0.04), 0 12px 32px -16px rgba(18, 28, 95, 0.16);
+  --p-shadow-hover: 0 2px 4px rgba(18, 28, 95, 0.05), 0 22px 44px -18px rgba(18, 28, 95, 0.24);
+  --p-grad-flame: linear-gradient(120deg, #b6410f 0%, #c1490c 55%, #e1540e 100%);
+  --p-grad-duo: linear-gradient(90deg, var(--b-gold) 0%, var(--b-navy-700) 100%);
+
+  /* Type scale */
+  --d-font-xs: 0.75rem;
+  --d-font-sm: 0.875rem;
+  --d-font-md: 1rem;
+  --d-font-lg: 1.25rem;
+  --d-font-xl: 1.5rem;
+  --d-font-2xl: 2rem;
+  --d-font-3xl: 2.75rem;
+  --d-font-4xl: 3.75rem;
+  --d-font-5xl: 5.25rem;
+
+  /* Spacing scale */
+  --d-space-1: 4px;
+  --d-space-2: 8px;
+  --d-space-3: 12px;
+  --d-space-4: 16px;
+  --d-space-5: 24px;
+  --d-space-6: 32px;
+  --d-space-7: 48px;
+  --d-space-8: 64px;
+  --d-space-9: 96px;
+
+  /* Shape, elevation and layout */
+  --d-radius-sm: 6px;
+  --d-radius-md: 10px;
+  --d-radius-lg: 18px;
+  --d-radius-pill: 999px;
+  --d-shadow-sm: 0 4px 14px rgba(18, 28, 95, 0.08);
+  --d-shadow-md: 0 12px 32px -12px rgba(18, 28, 95, 0.16);
+  --d-shadow-lg: 0 24px 60px -18px rgba(18, 28, 95, 0.24);
+  --d-container: 1240px;
+  --d-container-wide: 1400px;
+
+  /* Breakpoints and motion */
+  --d-breakpoint-mobile: 700px;
+  --d-breakpoint-tablet: 1080px;
+  --d-breakpoint-desktop: 1400px;
+  --d-motion-fast: 150ms;
+  --d-motion-base: 260ms;
+  --d-motion-slow: 500ms;
+  --d-ease-standard: cubic-bezier(0.22, 0.75, 0.28, 1);
+}
+
+/* ---------- Surfaces & base type ---------- */
+html { background: var(--b-ivory); }
+body {
+  background: var(--b-ivory);
+  color: var(--b-charcoal);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--b-gold-tint); color: var(--b-navy-900); }
+
+:where(h1, h2) { text-wrap: balance; }
+:where(p, li) { text-wrap: pretty; }
+
+/* ---------- Shared component states ---------- */
+:is(.button, .sa-btn, .sa-header-cta, .sa-drawer-cta, button, [role="button"]):not(:disabled) {
+  transition:
+    background-color var(--d-motion-base) var(--d-ease-standard),
+    border-color var(--d-motion-base) var(--d-ease-standard),
+    color var(--d-motion-base) var(--d-ease-standard),
+    box-shadow var(--d-motion-base) var(--d-ease-standard),
+    transform var(--d-motion-fast) var(--d-ease-standard);
+}
+
+:is(.button, .sa-btn, .sa-header-cta, .sa-drawer-cta, button, [role="button"]):not(:disabled):active {
+  transform: translateY(1px);
+}
+
+:is(.button, .sa-btn, button, [role="button"]):disabled,
+:is(.button, .sa-btn, button, [role="button"])[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.58;
+  box-shadow: none;
+  transform: none;
+}
+
+:is(.button, .sa-btn, button, [role="button"])[aria-busy="true"] {
+  cursor: progress;
+  opacity: 0.78;
+}
+
+:is(input, select, textarea):disabled {
+  cursor: not-allowed;
+  background: var(--b-ivory-2);
+  opacity: 0.72;
+}
+
+:is(input, select, textarea):not(:disabled):focus {
+  border-color: var(--b-gold);
+  box-shadow: 0 0 0 3px rgba(193, 73, 12, 0.16);
+}
+
+:is(input, select, textarea)[aria-invalid="true"],
+:is(input, select, textarea):invalid:not(:placeholder-shown) {
+  border-color: #a24a43;
+}
+
+:is(.sa-pillar-card, .sa-aviation-card, .sa-club-plan, .sa-quick-card, .franchise-investment-card, .club-inclusion-card) {
+  border-radius: var(--d-radius-lg);
+  box-shadow: var(--d-shadow-sm);
+}
+
+:is(details, .sa-drawer-group) summary {
+  cursor: pointer;
+}
+
+.lead-feedback {
+  border-radius: var(--d-radius-sm);
+  margin-block-start: var(--d-space-3);
+}
+
+.lead-feedback-success {
+  color: var(--b-navy-900);
+  background: var(--b-teal-tint);
+  border-inline-start: 3px solid var(--b-teal);
+}
+
+.lead-feedback-error {
+  color: #71332d;
+  background: #f9ebe8;
+  border-inline-start: 3px solid #a24a43;
+}
+
+/* Focus: visible, on-brand, never removed */
+:is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--b-gold) !important;
+  outline-offset: 3px;
+}
+
+/* ---------- One display typeface everywhere ---------- */
+.skin[data-font] {
+  --skin-display: var(--b-display);
+  --skin-weight: 600;
+  --skin-track: -0.015em;
+}
+.skin[data-font] :is(h1, h2):not(header *):not(footer *) { font-size-adjust: none; }
+
+/* ---------- One colour mood for every skinned page ---------- */
+.skin[data-tone] {
+  --t-dark:
+    radial-gradient(60% 80% at 100% 0%, rgba(193, 73, 12, 0.10), transparent 60%),
+    linear-gradient(160deg, var(--b-navy-950) 0%, var(--b-navy-900) 55%, var(--b-navy-800) 100%);
+  --t-light: var(--b-ivory-2);
+  --t-warm: var(--b-ivory);
+  --t-plain: var(--b-white);
+  --t-accent: var(--b-gold-ink);
+}
+
+/* Large gold fills read as "gold everywhere": keep gold to type, rules and the primary CTA */
+.p-progress { background: var(--b-gold) !important; height: 2px !important; }
+
+/* ---------- Home hero: full photograph + navy overlay + copy (no jet, no floating cards) ---------- */
+body .sa-page .sa-hero {
+  color: #fff !important;
+  background: var(--b-navy-900) !important;
+  min-height: min(880px, 100svh) !important;
+  padding: 150px 0 110px !important;
+  align-items: center !important;
+}
+body .sa-page .sa-hero-media {
+  background: none !important;
+  animation: none !important;
+}
+body .sa-page .sa-hero-media img {
+  opacity: 1 !important;
+  animation: none !important;
+  object-position: center 72%; /* HERO.jpg: keep the aircraft in view below the centred copy */
+}
+body .sa-page .sa-hero-media::before { display: none !important; }
+body .sa-page .sa-hero-media::after {
+  z-index: 1 !important;
+  background:
+    linear-gradient(180deg, rgba(13, 20, 68, 0.72) 0%, rgba(13, 20, 68, 0.45) 40%, rgba(13, 20, 68, 0.55) 70%, rgba(13, 20, 68, 0.9) 100%) !important;
+  background-size: auto !important;
+}
+/* (pseudo-elements can't go inside :is(), so each is listed separately) */
+body .sa-page .sa-hero::before,
+body .sa-page .sa-hero::after,
+body .sa-page .sa-hero-mandala,
+body .sa-page .sa-hero-content::after { display: none !important; }
+body .sa-page .sa-hero h1 { color: #fff !important; }
+body .sa-page .sa-hero h1 :is(em, .sa-serif),
+body .sa-page .sa-hero h1 :is(em, .sa-serif) .motion-word {
+  background: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: var(--b-gold-soft) !important;
+  animation: none !important;
+}
+body .sa-page .sa-hero-kicker { color: var(--b-gold-soft) !important; }
+body .sa-page .sa-hero-kicker::before,
+body .sa-page .sa-hero-kicker::after { background: var(--b-gold) !important; }
+body .sa-page .sa-hero-marathi { color: var(--b-gold-soft) !important; }
+body .sa-page .sa-hero-copy { color: rgba(255, 255, 255, 0.86) !important; }
+body .sa-page .sa-hero .sa-btn-ghost {
+  color: #fff !important;
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+body .sa-page .sa-hero .sa-btn-ghost:hover { border-color: var(--b-gold-soft) !important; }
+body .sa-page .sa-hero-trust {
+  background: rgba(13, 20, 68, 0.35) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+body .sa-page .sa-trust-chip { color: rgba(255, 255, 255, 0.9) !important; background: transparent !important; }
+body .sa-page .sa-trust-chip svg { color: var(--b-gold-soft) !important; }
+body .sa-page .sa-hero-scroll { color: rgba(255, 255, 255, 0.7) !important; }
+body .sa-page .sa-hero-scroll span { animation: none !important; }
+/* Transparent header over the light hero no longer applies — keep header legible over the photo */
+html:not(.is-scrolled) body:has(main > .sa-hero:first-child) .p-header {
+  background: rgba(13, 20, 68, 0.35) !important;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ---------- Motion: subtle and finite ----------
+   Decorative loops (spinning mandalas/globes, bobbing cards, flying planes,
+   shimmer, Ken Burns, tickers) play once at most. Functional indicators
+   (typing dots, live/availability dots) keep looping. */
+*, *::before, *::after { animation-iteration-count: 1 !important; }
+.assistant-typing i,
+.availability-dot,
+.fs-live-dot { animation-iteration-count: infinite !important; }
+
+/* Destination ticker → a calm, static, wrapping list */
+.sa-m-ticker-track {
+  animation: none !important;
+  transform: none !important;
+  width: auto !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Hover feedback: short and quiet */
+:is(.al-card, .sa-pillar-card, .sa-quick-card, .sa-insight-card, .scs-pillar-card, .scs-step-card, .scs-value-card,
+    .aviation-index-card, .aviation-related-card, .club-inclusion-card, .plan-card, .insight-card):hover {
+  transform: translateY(-3px) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* After the zero reset: long-form text (policy pages) needs deliberate spacing,
+   because it previously relied on browser-default margins. */
+main > article :is(h2, h3, h4) { margin: 1.8em 0 0.5em; }
+main > article :is(h2, h3, h4):first-child { margin-top: 0; }
+main > article :is(p, ul, ol, table, blockquote) { margin: 0 0 1em; }
+main > article :is(ul, ol) { padding-left: 1.4em; }
+main > article li + li { margin-top: 0.35em; }
+
+/* Headline accents over photo heroes use the light orange (readable on the blue overlay);
+   the deep orange (#c2410c) is reserved for text on white/ivory. */
+:is(.sa-av-hero, .al-hero) h1 :is(em, .sa-serif) {
+  color: var(--b-gold-soft) !important;
+  -webkit-text-fill-color: currentColor !important;
+  background: none !important;
+}
+/* These heroes only sit on the photo from 901px up; on phones the copy is on ivory, so keep the deep orange there. */
+@media (min-width: 901px) {
+  :is(.global-service-hero, .aviation-service-hero, .franchise-hero, .club-hero) h1 :is(em, .sa-serif) {
+    color: var(--b-gold-soft) !important;
+    -webkit-text-fill-color: currentColor !important;
+    background: none !important;
+  }
+}
+
+/* International Club / Tirth Yatra photo heroes: same light-orange headline accent */
+:is(.sa-m-hero, .sa-y-hero) h1 :is(em, .sa-serif) { color: var(--b-gold-soft) !important; -webkit-text-fill-color: currentColor !important; background: none !important; }

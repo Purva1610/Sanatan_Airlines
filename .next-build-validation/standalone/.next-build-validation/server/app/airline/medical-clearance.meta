@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/medical-clearance/layout,_N_T_/airline/medical-clearance/page,_N_T_/airline/medical-clearance"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/medical-clearance/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/28cad6147820d8df9ab9d4053d5cdc5e3225e3408c74586fe499b88102e714b9/$/airline/medical-clearance",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/medical-clearance/page"
+    },
+    "isFallback": false
+  }
+}

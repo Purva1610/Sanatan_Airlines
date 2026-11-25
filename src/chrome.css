@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Global chrome — utility bar, header, footer, floating actions, mobile bar
+   (brief: "Quick links & global call-to-action system"). Imported after
+   brand.css. Markup: src/SiteChrome.jsx, src/SiteFeatures.jsx.
+   ========================================================================== */
+
+/* The chrome carries its own tokens so it renders identically on every page,
+   not only inside the home page's .sa-page wrapper. */
+.sa-chrome {
+  --sa-navy: var(--b-navy-800);
+  --sa-navy-2: var(--b-navy-700);
+  --sa-ink: var(--b-charcoal);
+  --sa-saffron: var(--b-gold);
+  --sa-saffron-deep: var(--b-gold-ink);
+  --sa-gold: var(--b-gold);
+  --sa-gold-soft: var(--b-gold-soft);
+  --sa-ivory: var(--b-ivory);
+  --sa-earth: var(--b-gold-ink);
+  --sa-muted: var(--b-slate);
+  --sa-line: rgba(17, 27, 90, 0.12);
+  --sa-container: 1240px;
+  --sa-ease: cubic-bezier(0.22, 0.75, 0.28, 1);
+  --sa-utility-h: 34px;
+  font-family: var(--b-sans);
+}
+div.sa-chrome { display: contents; }
+.sa-chrome :is(a, button) { -webkit-tap-highlight-color: transparent; }
+
+/* Skip link */
+.sa-skip-link {
+  position: fixed; left: 16px; top: -60px; z-index: 200;
+  padding: 10px 16px; border-radius: 8px;
+  background: var(--b-navy-900); color: #fff; font-size: 13px; font-weight: 700;
+}
+.sa-skip-link:focus { top: 12px; }
+
+/* ---------- Utility bar ---------- */
+.sa-chrome .sa-utility-bar { background: var(--b-navy-900); }
+.sa-chrome .sa-utility-inner { font-size: 11.5px; }
+.sa-chrome .sa-utility-inner a { min-height: 34px; }
+.sa-chrome .sa-utility-inner .sa-utility-cta { display: none; }
+
+/* ---------- Header ---------- */
+.sa-chrome .sa-header-inner { max-width: 1400px; gap: 24px; }
+.sa-chrome .sa-nav { gap: clamp(16px, 1.6vw, 26px); }
+.sa-chrome .sa-nav :is(a, .sa-nav-trigger) { white-space: nowrap; }
+.sa-chrome .sa-nav a[aria-current='page'],
+.sa-chrome .sa-nav-trigger.is-current { opacity: 1; color: var(--b-gold-ink); }
+.sa-chrome .sa-header:not(.is-scrolled) .sa-nav :is(a[aria-current='page'], .sa-nav-trigger.is-current) { color: var(--b-gold-soft); }
+
+.sa-header-ctas { display: flex; align-items: center; gap: 18px; flex-shrink: 0; }
+.sa-header-link {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: inherit; white-space: nowrap; opacity: 0.9;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s var(--sa-ease), border-color 0.2s var(--sa-ease);
+}
+.sa-header-link:hover { opacity: 1; border-bottom-color: var(--b-gold); }
+.sa-chrome .sa-header-cta { padding: 0 18px; letter-spacing: 0.08em; }
+
+/* Solid header (every page without a dark full-photo hero) */
+.sa-chrome.is-solid .sa-header {
+  background: rgba(250, 247, 241, 0.97);
+  color: var(--b-navy-900);
+  box-shadow: 0 1px 0 rgba(18, 28, 95, 0.08);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+}
+.sa-chrome-spacer { height: calc(var(--sa-utility-h) + 68px); }
+
+/* Secondary CTAs: in the main bar from 1400px; in the utility bar between 1081 and 1399px */
+@media (max-width: 1399px) {
+  .sa-chrome .sa-header-link { display: none; }
+  .sa-chrome .sa-utility-inner .sa-utility-cta { display: inline-flex; font-weight: 700; color: var(--b-gold-soft); }
+}
+@media (max-width: 1180px) {
+  .sa-chrome .sa-nav { gap: 16px; }
+  .sa-chrome .sa-nav :is(a, .sa-nav-trigger) { font-size: 11.5px; letter-spacing: 0.03em; }
+}
+@media (max-width: 1080px) {
+  /* Menu toggle takes over; keep the primary CTA visible on tablets */
+  .sa-chrome .sa-header-ctas { margin-left: auto; }
+  .sa-chrome .sa-header-cta { display: inline-flex; }
+  .sa-chrome .sa-menu-toggle { margin-left: 0; }
+}
+@media (max-width: 700px) {
+  .sa-chrome .sa-header-ctas { display: none; }
+  .sa-chrome .sa-menu-toggle { margin-left: auto; }
+  .sa-chrome-spacer { height: calc(var(--sa-utility-h) + 64px); }
+}
+
+/* Drawer: CTAs first, then navigation, then contact quick links */
+.sa-drawer-ctas { display: grid; gap: 10px; margin: 8px 0 22px; }
+.sa-drawer-ctas a {
+  display: flex; align-items: center; justify-content: center; min-height: 48px;
+  border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.sa-drawer-ctas .sa-drawer-cta { background: var(--b-gold); border-color: var(--b-gold); color: var(--b-navy-950); }
+.sa-chrome .sa-drawer-actions { flex-wrap: wrap; }
+.sa-chrome .sa-drawer-actions > a { display: inline-flex; align-items: center; gap: 8px; }
+
+/* ---------- Footer ---------- */
+.sa-footer.sa-chrome { background: var(--b-navy-900); color: rgba(255, 255, 255, 0.74); }
+.sa-footer-grid.sa-footer-grid-site { grid-template-columns: 1.4fr repeat(4, 1fr) 1.3fr; }
+.sa-footer-col a { overflow-wrap: anywhere; }
+.sa-footer-contact { font-style: normal; display: grid; gap: 12px; }
+.sa-footer-contact > div { display: grid; grid-template-columns: 16px 1fr; gap: 10px; align-items: start; }
+.sa-footer-contact svg { color: var(--b-gold-soft); margin-top: 3px; }
+.sa-footer-contact a { color: inherit; }
+.sa-footer-contact a:hover { color: var(--b-gold-soft); }
+.sa-footer-enquire {
+  display: inline-flex !important; align-items: center; gap: 6px; margin-top: 14px;
+  color: var(--b-gold-soft) !important; font-weight: 700;
+}
+.sa-footer-bottom { display: grid !important; gap: 14px; justify-content: stretch !important; }
+.sa-footer-legal { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.sa-footer-legal a { color: rgba(255, 255, 255, 0.72); }
+.sa-footer-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+@media (max-width: 1180px) {
+  .sa-footer-grid.sa-footer-grid-site { grid-template-columns: repeat(3, 1fr); }
+  .sa-footer-grid-site .sa-footer-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 700px) {
+  .sa-footer-grid.sa-footer-grid-site { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+  .sa-footer-grid-site .sa-footer-reach { grid-column: 1 / -1; }
+}
+
+/* ---------- Floating actions: WhatsApp · Call · Back to top ---------- */
+.sa-fab {
+  position: fixed; right: 22px; bottom: 84px; z-index: 65;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+  font-family: var(--b-sans);
+}
+.sa-fab-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-width: 48px; min-height: 48px; padding: 0 16px; border-radius: 999px;
+  background: var(--b-navy-900); color: #fff; border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px -10px rgba(13, 20, 68, 0.55);
+  font-size: 12px; font-weight: 700; cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+.sa-fab-btn:hover { background: var(--b-navy-700); transform: translateY(-2px); }
+.sa-fab-top { width: 48px; padding: 0; background: #fff; color: var(--b-navy-900); border-color: var(--b-line); }
+.sa-fab-top:hover { background: var(--b-ivory-2); }
+.sa-fab-top:not(.is-visible) { opacity: 0; pointer-events: none; transform: translateY(8px); }
+/* Icon-only circles keep the footprint small (non-obstructive); labels stay for screen readers */
+.sa-fab-btn { width: 48px; padding: 0; }
+.sa-fab-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Mobile sticky CTA: Enquire · Call · WhatsApp ---------- */
+.sa-mobile-bar { display: none; }
+
+@media (max-width: 760px) {
+  .sa-mobile-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 66;
+    display: flex; gap: 8px;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+    background: rgba(13, 20, 68, 0.97);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+    font-family: var(--b-sans);
+    transition: transform 0.25s ease;
+  }
+  .sa-mobile-bar.is-hidden { transform: translateY(110%); }
+  .sa-mobile-bar a {
+    flex: 1; min-height: 48px; border-radius: 12px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+    color: #fff; background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 13px; font-weight: 700;
+  }
+  .sa-mobile-bar .sa-mobile-bar-primary { flex: 1.4; background: var(--b-gold); border-color: var(--b-gold); color: var(--b-navy-950); }
+
+  /* Reserve space so the bar never covers the end of the page */
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)) !important; }
+
+  /* One sticky bar only: retire the per-page sticky enquiry bars on mobile */
+  .sa-av-sticky, .sa-m-sticky, .sa-y-sticky, .mobile-sticky-cta, .aviation-mobile-nav { display: none !important; }
+
+  /* WhatsApp / Call live in the bar; keep back-to-top + assistant above it */
+  .sa-fab { right: auto; left: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .sa-fab .sa-fab-btn:not(.sa-fab-top) { display: none; }
+  .sa-fab-top { width: 44px; min-width: 44px; min-height: 44px; }
+  .assistant-toggle { bottom: calc(76px + env(safe-area-inset-bottom)) !important; right: 12px !important; }
+  .assistant-panel { bottom: calc(130px + env(safe-area-inset-bottom)) !important; max-height: calc(100dvh - 160px) !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sa-fab-btn, .sa-mobile-bar { transition: none; }
+}
+
+/* ---------- Visual breadcrumbs (rendered by app/[...slug]/page.tsx before the page) ----------
+   The fixed header would otherwise cover them: on solid-header pages they move below the
+   header and take over the spacer's job; on photo-hero (overlay) pages they are hidden
+   visually (BreadcrumbList structured data is still output). */
+body:has(.sa-chrome.is-solid) .site-breadcrumbs {
+  margin-top: calc(var(--sa-utility-h, 34px) + 68px);
+  min-height: 40px; padding-block: 10px;
+  background: var(--b-ivory); border-bottom: 1px solid var(--b-line);
+}
+body:has(.site-breadcrumbs) .sa-chrome-spacer { display: none; }
+body:has(.sa-chrome.is-overlay) .site-breadcrumbs { display: none; }
+body:has(.sa-chrome.is-overlay) .sa-chrome-spacer { display: none; }
+.site-breadcrumbs li { font-family: var(--b-sans) !important; font-size: 12.5px !important; }
+.site-breadcrumbs a { color: var(--b-gold-ink) !important; }
+@media (max-width: 700px) {
+  body:has(.sa-chrome.is-solid) .site-breadcrumbs { margin-top: calc(var(--sa-utility-h, 34px) + 64px); }
+}
+
+/* ---------- Mega menu (desktop) ---------- */
+.sa-chrome .sa-nav-group { position: static; }
+.sa-mega {
+  position: absolute; left: 0; right: 0; top: 100%; z-index: 5;
+  background: var(--b-ivory); color: var(--b-charcoal);
+  border-top: 1px solid var(--b-line); box-shadow: 0 30px 60px -30px rgba(13, 20, 68, 0.35);
+  animation: sa-mega-in 0.18s ease-out;
+}
+.sa-mega[hidden] { display: none; }
+@keyframes sa-mega-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.sa-mega-inner {
+  max-width: 1400px; margin-inline: auto; padding: 30px clamp(20px, 4vw, 48px) 34px;
+  display: grid; grid-template-columns: minmax(180px, 0.8fr) minmax(0, 2.6fr) minmax(220px, 1fr); gap: 36px; align-items: start;
+}
+.sa-mega-intro { display: grid; gap: 10px; padding-right: 24px; border-right: 1px solid var(--b-line); }
+.sa-chrome .sa-mega-overview { display: inline-flex; align-items: center; gap: 6px; font-family: var(--b-display); font-size: 24px; font-weight: 600; color: var(--b-navy-900); opacity: 1; padding: 0; letter-spacing: 0; }
+.sa-chrome .sa-mega a::after { display: none; }
+.sa-mega-intro p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--b-slate); }
+.sa-mega-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; }
+.sa-mega-heading { margin: 0 0 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--b-gold-ink); }
+.sa-mega-column ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.sa-chrome .sa-mega-column a {
+  display: block; padding: 7px 0; font-size: 14.5px; font-weight: 600; letter-spacing: 0; color: var(--b-navy-900); opacity: 1;
+}
+.sa-chrome .sa-mega-column a:hover, .sa-chrome .sa-mega-column a:focus-visible { color: var(--b-gold-ink); }
+.sa-chrome .sa-mega-column a[aria-current='page'] { color: var(--b-gold-ink); text-decoration: underline; text-underline-offset: 4px; }
+.sa-chrome .sa-mega-feature {
+  position: relative; display: grid; gap: 8px; padding: 22px 22px 22px; border-radius: 16px;
+  background: var(--b-navy-900); color: #fff; opacity: 1; letter-spacing: 0;
+}
+.sa-mega-feature strong { font-family: var(--b-display); font-size: 19px; font-weight: 600; padding-right: 22px; }
+.sa-mega-feature span { font-size: 13.5px; line-height: 1.55; color: rgba(255, 255, 255, 0.75); font-weight: 500; }
+.sa-mega-feature svg { position: absolute; top: 22px; right: 20px; color: var(--b-gold-soft); }
+.sa-chrome .sa-mega-feature:hover { background: var(--b-navy-700); }
+
+/* Mobile accordion sub-groups */
+.sa-drawer-subgroup { display: grid; padding: 6px 0 4px; }
+.sa-drawer-heading { margin: 8px 0 2px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--b-gold-soft); }
+.sa-drawer-group a[aria-current='page'] { color: var(--b-gold-soft); }
+
+@media (prefers-reduced-motion: reduce) { .sa-mega { animation: none; } }
+
+/* ---------- Enquiry wizard: opt-in save progress ---------- */
+.wizard-save { display: flex; gap: 10px; align-items: flex-start; margin: 18px 0 6px; padding: 14px 16px; border-radius: 12px; background: var(--b-ivory-2); border: 1px solid var(--b-line); font-family: var(--b-sans); font-size: 13px; line-height: 1.55; color: var(--b-slate); }
+.wizard-save input { width: 18px; height: 18px; margin-top: 2px; flex: 0 0 auto; accent-color: var(--b-gold-ink); }
+.wizard-save strong { color: var(--b-navy-900); }
+.wizard-resume { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; padding: 16px 18px; border-radius: 12px; background: #fff; border: 1px solid var(--b-gold); font-family: var(--b-sans); font-size: 14px; color: var(--b-charcoal); }
+.wizard-resume p { margin: 0; }
+.wizard-resume div { display: flex; gap: 10px; align-items: center; }
+.sa-chrome .sa-nav .sa-mega a { white-space: normal; }
+
+/* ---------- WCAG 2.2: focus not obscured (2.4.11) & target size (2.5.8) ----------
+   Keyboard focus / in-page jumps must land below the fixed utility bar + header, and above
+   the mobile action bar. Disclosure toggles get a comfortable minimum tap height. */
+html { scroll-padding-top: calc(var(--sa-utility-h, 34px) + 84px) !important; }
+@media (max-width: 760px) {
+  html { scroll-padding-top: calc(var(--sa-utility-h, 34px) + 76px) !important; scroll-padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
+}
+main details > summary { min-height: 44px; cursor: pointer; }
+main details > summary:not([class*="flex"]) { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.sa-chrome .sa-brand-text { white-space: nowrap; }
+
+/* ---------- Accessibility audit fixes (brief §12.3) ---------- */
+/* 2.5.8 target size: disclosure toggles and small text links */
+main details > summary { min-height: 44px !important; }
+.sa-footer-col a { display: flex; align-items: center; min-height: 28px; }
+.sa-footer-legal a { display: inline-flex; align-items: center; min-height: 28px; }
+.sa-skip-link { min-height: 44px; display: inline-flex; align-items: center; }
+/* 1.4.3 contrast: eyebrow on ivory used #c74b0d (~2.9:1) */
+.scs-eyebrow { color: var(--b-gold-ink); }
+/* next/image "fill" images default to cover so they never stretch (zero specificity — any rule overrides) */
+:where(img[data-nimg="fill"]) { object-fit: cover; }
+.sa-footer-brand p { margin-top: 18px; }
+.sa-footer-social { margin-top: 20px; }
+
+/* ---------- Google Translate (src/GoogleTranslate.jsx) ---------- */
+.sa-translate { display: inline-flex; align-items: center; gap: 6px; }
+.sa-translate-label { display: inline-flex; color: var(--b-gold-soft); }
+.sa-translate select {
+  min-height: 28px; max-width: 150px; padding: 0 22px 0 8px; border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.08);
+  color: #fff; font: 600 11.5px var(--b-sans); cursor: pointer;
+}
+.sa-translate select option { color: #111827; background: #fff; }
+.sa-translate select:focus-visible { outline: 2px solid var(--b-gold-soft); outline-offset: 2px; }
+.sa-translate-reset {
+  border: 0; background: none; color: var(--b-gold-soft); font: 700 11px var(--b-sans);
+  text-decoration: underline; text-underline-offset: 3px; cursor: pointer; white-space: nowrap;
+}
+.sa-utility-inner .sa-translate { margin-left: 18px; }
+.sa-translate-drawer { margin: 18px 0 6px; }
+.sa-translate-drawer select { min-height: 44px; max-width: none; flex: 1; font-size: 14px; }
+@media (max-width: 700px) {
+  .sa-utility-inner { gap: 10px; }
+  .sa-utility-inner .sa-translate { margin-left: auto; }
+  .sa-utility-inner .sa-translate-reset { display: none; }
+}
+/* Hide Google's own banner, tooltip and highlight; keep the page from being pushed down */
+#google_translate_element, .goog-te-banner-frame, iframe.skiptranslate, .skiptranslate > iframe,
+.VIpgJd-ZVi9od-ORHb-OEVmcd, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf, #goog-gt-tt, .goog-te-balloon-frame,
+.VIpgJd-yAWNEb-L7lbkb { display: none !important; }
+html, body { top: 0 !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+/* Translated pages: letter-spacing breaks Indic/Arabic scripts apart — reset it everywhere except the brand mark */
+html[class*="translated-"] *:not(.notranslate):not(.notranslate *) { letter-spacing: normal !important; }

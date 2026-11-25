@@ -1,0 +1,939 @@
+[
+  {
+    "route": "/[...slug]",
+    "firstLoadUncompressedJsBytes": 1011821,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3yju3jx03cst8.js",
+      ".next-build-validation\\static\\chunks\\217okbiwbwsgz.js",
+      ".next-build-validation\\static\\chunks\\2srjn1_cvoqey.js",
+      ".next-build-validation\\static\\chunks\\11f378hlsigsy.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 827539,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\40k148z5gwf9c.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\217okbiwbwsgz.js",
+      ".next-build-validation\\static\\chunks\\11f378hlsigsy.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/enquire",
+    "firstLoadUncompressedJsBytes": 698672,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1fvk-6d6wo246.js",
+      ".next-build-validation\\static\\chunks\\11f378hlsigsy.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/airport-lounges",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/car-rental",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/gift-vouchers",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/hotel-flight",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/sustainability",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/travel-insurance",
+    "firstLoadUncompressedJsBytes": 667115,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0bnd6w41iggxi.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/cargo-services",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/dangerous-goods",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/excess-baggage",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/express-cargo",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/live-animals-cargo",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/musical-instruments",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/sports-equipment",
+    "firstLoadUncompressedJsBytes": 656553,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2v1t0g73l28ll.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/flexible-fares",
+    "firstLoadUncompressedJsBytes": 651784,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1k-3xwmewc0gs.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/group-travel",
+    "firstLoadUncompressedJsBytes": 651784,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1k-3xwmewc0gs.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/multi-city",
+    "firstLoadUncompressedJsBytes": 651784,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1k-3xwmewc0gs.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/round-the-world",
+    "firstLoadUncompressedJsBytes": 651784,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1k-3xwmewc0gs.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/corporate-travel",
+    "firstLoadUncompressedJsBytes": 649757,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0w920xwuclluv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/military-fares",
+    "firstLoadUncompressedJsBytes": 649757,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0w920xwuclluv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/senior-fares",
+    "firstLoadUncompressedJsBytes": 649757,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0w920xwuclluv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/student-fares",
+    "firstLoadUncompressedJsBytes": 649757,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0w920xwuclluv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/extra-legroom",
+    "firstLoadUncompressedJsBytes": 642249,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2k0sii-o5wfps.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/in-flight-entertainment",
+    "firstLoadUncompressedJsBytes": 642249,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2k0sii-o5wfps.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/seat-selection",
+    "firstLoadUncompressedJsBytes": 642249,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2k0sii-o5wfps.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/business-class",
+    "firstLoadUncompressedJsBytes": 640078,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3vpm4sczxhm1s.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/economy-class",
+    "firstLoadUncompressedJsBytes": 640078,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3vpm4sczxhm1s.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/first-class",
+    "firstLoadUncompressedJsBytes": 640078,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3vpm4sczxhm1s.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/premium-economy",
+    "firstLoadUncompressedJsBytes": 640078,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3vpm4sczxhm1s.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/in-flight-dining",
+    "firstLoadUncompressedJsBytes": 638458,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1-g-7pylwdkyv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/special-assistance",
+    "firstLoadUncompressedJsBytes": 638458,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1-g-7pylwdkyv.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/pet-travel",
+    "firstLoadUncompressedJsBytes": 637393,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2ixaz1oq7w-ix.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/unaccompanied-minors",
+    "firstLoadUncompressedJsBytes": 637393,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2ixaz1oq7w-ix.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/wheelchair-assistance",
+    "firstLoadUncompressedJsBytes": 637393,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2ixaz1oq7w-ix.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/medical-clearance",
+    "firstLoadUncompressedJsBytes": 637052,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2th13w1h4x7cr.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/skynova-rewards",
+    "firstLoadUncompressedJsBytes": 637052,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2th13w1h4x7cr.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/enquiry",
+    "firstLoadUncompressedJsBytes": 636930,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\36g0ewg_s-lb8.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/about",
+    "firstLoadUncompressedJsBytes": 634344,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3_0klifwzygnk.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/baggage",
+    "firstLoadUncompressedJsBytes": 631755,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\459ziwz6en_g-.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/our-fleet",
+    "firstLoadUncompressedJsBytes": 631025,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1_lxaxx0_1c1e.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/check-in",
+    "firstLoadUncompressedJsBytes": 631012,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2prk2-ntn4u0z.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/destinations",
+    "firstLoadUncompressedJsBytes": 630326,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3qsvyqs3nojpo.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/book-flight",
+    "firstLoadUncompressedJsBytes": 629909,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\42-apmj-znpe0.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline",
+    "firstLoadUncompressedJsBytes": 629645,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2sx_k3bv5guz8.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/contact",
+    "firstLoadUncompressedJsBytes": 629528,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\39udjsx2yg9r4.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/flight-status",
+    "firstLoadUncompressedJsBytes": 628542,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\02m_cajt730gu.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/airline/manage-booking",
+    "firstLoadUncompressedJsBytes": 628282,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\3vquxijm88fig.js",
+      ".next-build-validation\\static\\chunks\\3vsbmm7t2w3jw.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/privacy-policy",
+    "firstLoadUncompressedJsBytes": 605287,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\31wvz3-3cuyuq.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/grievance-redressal",
+    "firstLoadUncompressedJsBytes": 604378,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\37250j4n3ultd.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/cookie-policy",
+    "firstLoadUncompressedJsBytes": 604150,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\2dy7y6492eg70.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/terms-and-conditions",
+    "firstLoadUncompressedJsBytes": 604063,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\00bedyf5_bqjc.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/cancellation-refund-policy",
+    "firstLoadUncompressedJsBytes": 603593,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\13gv3ww3orgd5.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/membership-terms",
+    "firstLoadUncompressedJsBytes": 603225,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\42k72key9dc2r.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/accessibility",
+    "firstLoadUncompressedJsBytes": 602775,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1m__c-6xkdm12.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/aviation-disclaimer",
+    "firstLoadUncompressedJsBytes": 602595,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\0ybk6o_hwzo2f.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/franchise-disclaimer",
+    "firstLoadUncompressedJsBytes": 601658,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\33vevk1necobd.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 569335,
+    "firstLoadChunkPaths": [
+      ".next-build-validation\\static\\chunks\\1owu2pzv51tey.js",
+      ".next-build-validation\\static\\chunks\\13aejdl-em2cz.js",
+      ".next-build-validation\\static\\chunks\\3zt_16xndew4w.js",
+      ".next-build-validation\\static\\chunks\\1pcw6gskne7pf.js",
+      ".next-build-validation\\static\\chunks\\1d-3ziz_810o8.js",
+      ".next-build-validation\\static\\chunks\\3jn_x8ihwq16e.js",
+      ".next-build-validation\\static\\chunks\\0cp7jhi5-a79g.js",
+      ".next-build-validation\\static\\chunks\\turbopack-2u1d16houkiyo.js"
+    ]
+  }
+]

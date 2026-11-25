@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/sports-equipment/layout,_N_T_/airline/sports-equipment/page,_N_T_/airline/sports-equipment"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/sports-equipment/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/484c70a9d2bca68f36861e280c01c18d2380586b692e8e59e8ea6f7f0f60c8e1/$/airline/sports-equipment",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/sports-equipment/page"
+    },
+    "isFallback": false
+  }
+}

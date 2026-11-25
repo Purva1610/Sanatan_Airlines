@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/cancellation-refund-policy/layout,_N_T_/cancellation-refund-policy/page,_N_T_/cancellation-refund-policy"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/cancellation-refund-policy/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/941fa4cf40a67591c6b8e1f750d1d84032122a4d86e0cf4385f4c6b8b0b7678a/$/cancellation-refund-policy",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/cancellation-refund-policy/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/flight-status/layout,_N_T_/airline/flight-status/page,_N_T_/airline/flight-status"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/flight-status/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/1577132d6149822471b36931fdc52ba65e8c2c5126a8110fc957d25551f0cc42/$/airline/flight-status",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/flight-status/page"
+    },
+    "isFallback": false
+  }
+}

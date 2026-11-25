@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/group-travel/layout,_N_T_/airline/group-travel/page,_N_T_/airline/group-travel"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/group-travel/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/f192239fd17e00a2da7ab6d8f19b3d2d2ccf03abf4342375fd0df5e5d6d3a6a3/$/airline/group-travel",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/group-travel/page"
+    },
+    "isFallback": false
+  }
+}

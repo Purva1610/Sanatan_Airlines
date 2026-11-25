@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.qoder
+server/node_modules
+server/uploads
+server/.env
+nginx
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*

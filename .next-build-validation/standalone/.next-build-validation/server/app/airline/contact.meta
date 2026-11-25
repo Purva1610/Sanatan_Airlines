@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/contact/layout,_N_T_/airline/contact/page,_N_T_/airline/contact"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/contact/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/3fdde39ae04b226ddf7b2902e271acadbfe83e1290ef3f5b2b3818929b8aceef/$/airline/contact",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/contact/page"
+    },
+    "isFallback": false
+  }
+}

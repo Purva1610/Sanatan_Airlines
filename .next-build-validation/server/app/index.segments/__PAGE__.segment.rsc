@@ -1,0 +1,41 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/1owu2pzv51tey.js"
+3:"/_next/static/chunks/13aejdl-em2cz.js"
+4:I[70737,["$2","$3"],"default"]
+5:I[94268,["$2","$3"],"default"]
+6:I[55307,["$2","$3"],"default"]
+7:I[39756,["$2","$3"],"default"]
+8:I[37457,["$2","$3"],"default"]
+9:"/_next/static/chunks/3zt_16xndew4w.js"
+a:I[22016,["$2","$3","$9"],""]
+e:"/_next/static/chunks/40k148z5gwf9c.js"
+f:"/_next/static/chunks/3vsbmm7t2w3jw.js"
+10:"/_next/static/chunks/217okbiwbwsgz.js"
+11:"/_next/static/chunks/11f378hlsigsy.js"
+12:I[86022,["$2","$3","$e","$f","$10","$11"],"default"]
+15:"ViewportBoundary"
+16:I[97367,["$2","$3"],"$15"]
+17:"MetadataBoundary"
+18:I[97367,["$2","$3"],"$17"]
+19:"$Sreact.suspense"
+:HL["/_next/static/chunks/10h22j1mabr2f.css","style"]
+:HL["/_next/static/chunks/2jyp5aciqubz-.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Marathi&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap","style"]
+c:X
+d:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Sanatan Aviation\",\"description\":\"Personal coordination across aviation, international membership and global services.\",\"url\":\"http://localhost:3000\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"Sanatan Aviation\",\"url\":\"http://localhost:3000\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"}]}"}}],["$","$L12",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/40k148z5gwf9c.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/3vsbmm7t2w3jw.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/217okbiwbwsgz.js","async":true}],["$","script","script-3",{"src":"/_next/static/chunks/11f378hlsigsy.js","async":true}]],"$L13"]}],"p":"$@14","v":null,"s":"$c"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/10h22j1mabr2f.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2jyp5aciqubz-.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1owu2pzv51tey.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/13aejdl-em2cz.js","async":true}]],["$","html",null,{"lang":"en-IN","data-scroll-behavior":"smooth","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Marathi&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"suppressHydrationWarning":true,"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"http://localhost:3000/#organization\",\"name\":\"Sanatan Airlines\",\"legalName\":\"Sanatan Airlines Private Limited\",\"url\":\"http://localhost:3000\",\"logo\":\"http://localhost:3000/icon.svg\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Office No. 309, Elixa Park, Old Pune–Bangalore Highway, Shahupuri\",\"addressLocality\":\"Kolhapur\",\"addressRegion\":\"Maharashtra\",\"postalCode\":\"416001\",\"addressCountry\":\"IN\"}}"}}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","main",null,{"className":"not-found-page","children":[["$","span",null,{"className":"eyebrow","children":"404 / PAGE NOT FOUND"}],["$","h1",null,{"children":"This page is not available."}],["$","p",null,{"children":"The address may have changed, or the page may not exist."}],["$","$La",null,{"className":"button button-dark","href":"/","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":15,"height":15,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," Return to Sanatan Airlines"]}]]}],[]]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$19",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Sanatan Aviation | A Journey with Faith. A World of Possibilities."}],["$","meta","1",{"name":"description","content":"Aviation coordination, international travel membership and global services — rooted in Sanatan values of trust, seva and dharma."}],["$","link","2",{"rel":"canonical","href":"http://localhost:3000"}],["$","meta","3",{"property":"og:title","content":"Sanatan Aviation | A Journey with Faith. A World of Possibilities."}],["$","meta","4",{"property":"og:description","content":"Aviation coordination, international travel membership and global services — rooted in Sanatan values of trust, seva and dharma."}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Sanatan Aviation | A Journey with Faith. A World of Possibilities."}],"$L1a","$L1b","$L1c","$L1d"]}]}],null]}],null]}],"p":"$@1e","v":null,"s":"$c"}},"a":"$@1f","u":"$@20","b":"ze06lE6i1iA_CI_KXOVgz"}
+21:I[97367,["$2","$3"],"OutletBoundary"]
+23:I[27201,["$2","$3"],"IconMark"]
+13:["$","$L21",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+1a:["$","meta","8",{"name":"twitter:description","content":"Aviation coordination, international travel membership and global services — rooted in Sanatan values of trust, seva and dharma."}]
+1b:["$","link","9",{"rel":"icon","href":"/favicon.ico?favicon.1u048l6ueeqgo.ico","sizes":"32x32","type":"image/x-icon"}]
+1c:["$","link","10",{"rel":"icon","href":"/icon.svg?icon.3fa74ju_p0bsy.svg","sizes":"any","type":"image/svg+xml"}]
+1d:["$","$L23","11",{}]
+c:300
+22:null
+20:true
+c:C
+1f:0
+b:"$undefined"
+1e:"$undefined"
+14:"$undefined"

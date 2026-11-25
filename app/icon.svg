@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sanatan Airlines">
+  <rect width="64" height="64" fill="#2438bb"/>
+  <rect x="17" y="17" width="30" height="30" fill="none" stroke="#c0480c" stroke-width="2" transform="rotate(45 32 32)"/>
+  <text x="32" y="41" font-family="Georgia, 'Times New Roman', serif" font-size="25" text-anchor="middle" fill="#ffffff">S</text>
+</svg>

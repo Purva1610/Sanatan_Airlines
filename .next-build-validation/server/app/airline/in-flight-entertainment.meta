@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/in-flight-entertainment/layout,_N_T_/airline/in-flight-entertainment/page,_N_T_/airline/in-flight-entertainment"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/in-flight-entertainment/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/8ef09c5d31c8427edb04080b0ab6baf3947418f1d527e28ac275ced824929f10/$/airline/in-flight-entertainment",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/in-flight-entertainment/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/aviation-disclaimer/layout,_N_T_/aviation-disclaimer/page,_N_T_/aviation-disclaimer"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/aviation-disclaimer/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/8756bc5cf2784df14a11eb5d97e403da11447280fba45385ebc80af9a7f7bd4d/$/aviation-disclaimer",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/aviation-disclaimer/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/about/layout,_N_T_/airline/about/page,_N_T_/airline/about"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/about/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/774fe1c4e63df4154d458236ab6b00deec4714f4b625d425e69ccfdf35bf3f3e/$/airline/about",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/about/page"
+    },
+    "isFallback": false
+  }
+}

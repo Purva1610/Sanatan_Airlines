@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/senior-fares/layout,_N_T_/airline/senior-fares/page,_N_T_/airline/senior-fares"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/senior-fares/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/6230a2c723b815db2a97f6395b1c161c64904275189a1ad5c7187bd64d716db2/$/airline/senior-fares",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/senior-fares/page"
+    },
+    "isFallback": false
+  }
+}

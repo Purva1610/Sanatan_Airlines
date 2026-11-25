@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/car-rental/layout,_N_T_/airline/car-rental/page,_N_T_/airline/car-rental"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/car-rental/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/2c9c58ae34d8deb70601eb45e774c8af0b9d7a607d26dc2ffb41b6180a240ed1/$/airline/car-rental",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/car-rental/page"
+    },
+    "isFallback": false
+  }
+}

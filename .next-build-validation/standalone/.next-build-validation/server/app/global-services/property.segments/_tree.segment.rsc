@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/10h22j1mabr2f.css","style"]
+:HL["/_next/static/chunks/2jyp5aciqubz-.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Marathi&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":{"n":"slug","t":"c","k":"global-services/property","s":["accessibility","airline","api","aviation-disclaimer","cancellation-refund-policy","cookie-policy","enquire","franchise-disclaimer","grievance-redressal","membership-terms","privacy-policy","terms-and-conditions"]},"h":65632,"c":"$Q2"}]]
+0:{"b":"ze06lE6i1iA_CI_KXOVgz","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

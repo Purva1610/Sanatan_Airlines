@@ -1,0 +1,378 @@
+/* ==========================================================================
+   Sanatan — Home page (/) flagship treatment
+   --------------------------------------------------------------------------
+   Scoped to the home page root (.sa-page) and stops at the About section
+   (.sa-about), which keeps its original look. Visual only — no content
+   changes. Loaded after flagship.css.
+   ========================================================================== */
+
+@keyframes hp-fly { 0% { offset-distance: 0%; opacity: 0; } 8% { opacity: 1; } 88% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+@keyframes hp-spin { to { rotate: 360deg; } }
+@keyframes hp-dash { to { stroke-dashoffset: -240; } }
+@keyframes hp-orb { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(60px, -40px) scale(1.15); } }
+@keyframes hp-cue { 0% { transform: translateY(-100%); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(220%); opacity: 0; } }
+@keyframes hp-rise { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+
+@scope (.sa-page) to (.sa-about) {
+
+  /* ------------------------------------------------------------------
+     HERO — cinematic, flight path, sheet-stacked bottom
+     ------------------------------------------------------------------ */
+  :scope .sa-hero { min-height: min(980px, 100svh); padding-bottom: 140px; }
+  :scope .sa-hero-mandala { display: none; }
+  :scope .sa-hero h1 {
+    font-size: clamp(46px, 6.8vw, 104px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.045em !important;
+    font-weight: 600;
+  }
+  :scope .sa-hero-kicker { letter-spacing: 0.34em; }
+  :scope .sa-hero-copy { font-size: clamp(15px, 1.25vw, 18px); max-width: 560px; }
+  :scope .sa-hero-trust {
+    display: inline-flex; flex-wrap: wrap; gap: 6px; padding: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  }
+  :scope .sa-trust-chip { border-color: transparent !important; background: rgba(255, 255, 255, 0.06); }
+  :scope .sa-hero-scroll { bottom: 82px; }
+
+  @media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+    :scope .sa-hero::before {
+      content: ''; position: absolute; z-index: 1; left: 0; top: 0; width: 1700px; height: 1000px; pointer-events: none;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1700' height='1000'%3E%3Cpath d='M760 760 C980 640 1180 330 1660 170' fill='none' stroke='%23ffffff' stroke-opacity='.38' stroke-width='1.5' stroke-dasharray='5 11'/%3E%3C/svg%3E") 0 0 / 1700px 1000px no-repeat;
+    }
+    :scope .sa-hero::after {
+      content: ''; position: absolute; z-index: 1; left: 0; top: 0; width: 30px; height: 30px; pointer-events: none;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff7a1a' d='M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z'/%3E%3C/svg%3E") center / contain no-repeat;
+      filter: drop-shadow(0 0 10px rgba(192, 72, 12, 0.9));
+      offset-path: path('M760 760 C980 640 1180 330 1660 170');
+      offset-rotate: auto 90deg;
+      animation: hp-fly 12s cubic-bezier(0.45, 0, 0.25, 1) 1.4s infinite;
+    }
+  }
+
+  /* Sections stack over the hero like sheets */
+  :scope #pillars {
+    margin-top: -56px;
+    z-index: 3;
+    border-radius: 48px 48px 0 0;
+    box-shadow: 0 -30px 60px -30px rgba(11, 18, 59, 0.5);
+  }
+
+  /* ------------------------------------------------------------------
+     SECTION HEADINGS
+     ------------------------------------------------------------------ */
+  :scope :is(.sa-section-head, .sa-quick-head, .sa-global-copy, .sa-consult-copy) h2 {
+    font-size: clamp(36px, 4.8vw, 66px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.04em !important;
+    font-weight: 600;
+  }
+  :scope .sa-eyebrow { letter-spacing: 0.3em; }
+
+  /* ------------------------------------------------------------------
+     PILLARS — photo-crowned cards
+     ------------------------------------------------------------------ */
+  :scope .sa-pillar-card {
+    padding-top: 252px !important;
+    overflow: hidden;
+    border-radius: 28px !important;
+    border-color: rgba(36, 56, 187, 0.08) !important;
+  }
+  :scope .sa-pillar-card::before {
+    content: ''; position: absolute; top: 10px; left: 10px; right: 10px; height: 222px; border-radius: 20px;
+    background: var(--pillar-img) center / 118% no-repeat;
+    transition: background-size 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  :scope .sa-pillar-card:hover::before { background-size: 132%; }
+  :scope .sa-pillar-card:nth-child(1) { --pillar-img: linear-gradient(180deg, transparent 55%, rgba(14, 22, 73, 0.45)), url('/images/sa-jet-tarmac.webp'); }
+  :scope .sa-pillar-card:nth-child(2) { --pillar-img: linear-gradient(180deg, transparent 55%, rgba(14, 22, 73, 0.45)), url('/images/sa-club-hero.webp'); }
+  :scope .sa-pillar-card:nth-child(3) { --pillar-img: linear-gradient(180deg, transparent 55%, rgba(14, 22, 73, 0.45)), url('/images/india/mumbai-gateway-dusk.webp'); }
+  :scope .sa-pillar-top { margin-top: -54px; position: relative; z-index: 1; }
+  :scope .sa-pillar-icon {
+    width: 64px; height: 64px; border-radius: 20px;
+    background: linear-gradient(135deg, #c0480c, #d6500e) !important; color: #fff !important;
+    box-shadow: 0 16px 30px -12px rgba(192, 72, 12, 0.7), 0 0 0 6px #fff;
+  }
+  :scope .sa-pillar-num {
+    font-family: 'Playfair Display', serif; font-size: 44px !important; font-style: italic;
+    color: transparent !important; -webkit-text-stroke: 1.3px rgba(255, 255, 255, 0.95);
+    position: absolute; top: -186px; right: 22px; z-index: 2;
+    text-shadow: 0 4px 18px rgba(14, 22, 73, 0.35);
+  }
+  :scope .sa-pillar-card h3 { font-size: 24px !important; letter-spacing: -0.02em; }
+
+  /* ------------------------------------------------------------------
+     QUICK ENQUIRY — warm jaali canvas, tiles that fill with saffron
+     ------------------------------------------------------------------ */
+  :scope #quick-enquiry {
+    background:
+      radial-gradient(40% 50% at 100% 0%, rgba(194, 73, 12, 0.12), transparent 70%),
+      url('/images/premium/pattern-jaali-warm.svg'),
+      #faf7f2 !important;
+  }
+  :scope .sa-quick-grid { gap: 16px; }
+  :scope .sa-quick-card {
+    position: relative; overflow: hidden; isolation: isolate;
+    min-height: 104px; padding: 22px 24px !important;
+    border-radius: 22px !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border: 1px solid rgba(36, 56, 187, 0.08) !important;
+  }
+  :scope .sa-quick-card::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+    background: radial-gradient(60% 90% at 100% 0%, rgba(215, 81, 14, 0.35), transparent 70%), linear-gradient(120deg, #17257b, #2438bb 60%, #2940d6);
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  :scope .sa-quick-card:hover::before { clip-path: circle(150% at 100% 0%); }
+  :scope .sa-quick-card :is(.sa-quick-label, .sa-quick-label small, .sa-quick-arrow) { transition: color 0.4s; }
+  :scope .sa-quick-card:hover :is(.sa-quick-label, .sa-quick-label small, .sa-quick-arrow) { color: #fff !important; }
+  :scope .sa-quick-card:hover .sa-quick-icon { background: #fff !important; color: #c0480c !important; }
+  :scope .sa-quick-icon { border-radius: 16px !important; }
+  :scope .sa-quick-label { font-size: 16.5px !important; }
+
+  /* ------------------------------------------------------------------
+     WHY CHOOSE / HOW IT WORKS
+     ------------------------------------------------------------------ */
+  :scope .scs-why { position: relative; isolation: isolate; overflow: hidden; }
+  :scope .scs-why::before {
+    content: ''; position: absolute; z-index: -1; width: 520px; height: 520px; right: -120px; top: -160px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(192, 72, 12, 0.32), transparent 65%);
+    animation: hp-orb 18s ease-in-out infinite;
+  }
+  :scope .scs-pillar-card { transition: background-color 0.4s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+  :scope .scs-pillar-card:hover { transform: translateY(-6px); box-shadow: inset 0 3px 0 #c0480c; }
+  :scope .scs-step-grid { position: relative; }
+  :scope .scs-step-card {
+    border-radius: 24px !important;
+    background: #fff;
+    box-shadow: 0 24px 50px -30px rgba(36, 56, 187, 0.35);
+    border-color: rgba(36, 56, 187, 0.08) !important;
+    transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s;
+  }
+  :scope .scs-step-card:hover { transform: translateY(-8px); box-shadow: 0 34px 60px -30px rgba(192, 72, 12, 0.45), inset 0 3px 0 #c0480c; }
+  :scope .scs-step-number {
+    display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, #c0480c, #d6500e); color: #fff !important; letter-spacing: 0.04em !important;
+    box-shadow: 0 10px 20px -8px rgba(192, 72, 12, 0.7);
+  }
+
+  /* ------------------------------------------------------------------
+     GLOBAL NETWORK — living globe
+     ------------------------------------------------------------------ */
+  :scope .sa-globe svg { animation: hp-spin 120s linear infinite; }
+  :scope .sa-globe path { animation: hp-dash 8s linear infinite; }
+  :scope .sa-globe::before {
+    content: ''; position: absolute; inset: 12%; border-radius: 50%;
+    background: radial-gradient(circle, rgba(192, 72, 12, 0.22), transparent 65%);
+    filter: blur(10px);
+  }
+  :scope .sa-region {
+    border-radius: 18px !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s, background-color 0.4s;
+  }
+  :scope .sa-region:hover { transform: translateY(-4px); border-color: rgba(214, 80, 14, 0.7) !important; background-color: rgba(255, 255, 255, 0.1) !important; }
+  :scope .sa-global-chips span { border-radius: 999px; transition: background-color 0.3s, border-color 0.3s; }
+  :scope .sa-global-chips span:hover { background: rgba(192, 72, 12, 0.18); border-color: rgba(214, 80, 14, 0.6); }
+
+  /* ------------------------------------------------------------------
+     INSIGHTS — magazine cards
+     ------------------------------------------------------------------ */
+  :scope .sa-insights-grid { gap: 24px; }
+  :scope .sa-insight-card {
+    border-radius: 28px !important;
+    border: 0 !important;
+    background: #fff;
+    box-shadow: 0 30px 60px -36px rgba(14, 22, 73, 0.45) !important;
+  }
+  :scope .sa-insight-media { aspect-ratio: 4 / 3; margin: 10px 10px 0; border-radius: 20px; height: auto !important; }
+  :scope .sa-insight-body { padding: 24px 26px 28px !important; position: relative; }
+  :scope .sa-insight-cat {
+    position: absolute; top: -18px; left: 26px;
+    padding: 8px 14px; border-radius: 999px;
+    background: linear-gradient(120deg, #c0480c, #c2490c); color: #fff !important;
+    box-shadow: 0 10px 20px -8px rgba(192, 72, 12, 0.6);
+    letter-spacing: 0.14em;
+  }
+  :scope .sa-insight-body h3 { margin-top: 12px; font-family: 'Playfair Display', serif; font-size: 23px !important; font-weight: 600 !important; letter-spacing: -0.01em; }
+
+  /* ------------------------------------------------------------------
+     CONSULTATION — royal panel + floating form
+     ------------------------------------------------------------------ */
+  :scope .sa-consult { isolation: isolate; background: #fbfaf6 !important; }
+  :scope .sa-consult::before {
+    left: 0 !important; top: 0 !important; bottom: 0 !important; width: 46% !important; height: auto !important;
+    border-radius: 0 48px 48px 0 !important; z-index: -1;
+    background:
+      radial-gradient(60% 50% at 0% 100%, rgba(192, 72, 12, 0.3), transparent 70%),
+      linear-gradient(135deg, rgba(14, 22, 73, 0.95), rgba(31, 48, 160, 0.88)),
+      url('/images/india/varanasi-ghats.webp') center / cover !important;
+  }
+  :scope .sa-consult-copy { color: #fff; }
+  :scope .sa-consult-copy h2 { color: #fff !important; }
+  :scope .sa-consult-copy > p { color: rgba(255, 255, 255, 0.76) !important; }
+  :scope .sa-consult-copy .sa-eyebrow { color: #fdb377 !important; }
+  :scope .sa-consult-point { color: rgba(255, 255, 255, 0.92) !important; }
+  :scope .sa-consult-point svg { color: #c2490c !important; }
+  :scope .sa-consult-contact { border-top-color: rgba(255, 255, 255, 0.16) !important; color: rgba(255, 255, 255, 0.68) !important; }
+  :scope .sa-consult-contact strong { color: #fdb377 !important; }
+  :scope .sa-form-card {
+    border-radius: 30px !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 50px 100px -40px rgba(14, 22, 73, 0.45), 0 0 0 10px rgba(255, 255, 255, 0.5) !important;
+  }
+
+  @media (max-width: 900px) {
+    :scope .sa-consult::before { width: 100% !important; bottom: auto !important; height: 62% !important; border-radius: 0 0 40px 40px !important; }
+    :scope #pillars { margin-top: -32px; border-radius: 32px 32px 0 0; }
+    :scope .sa-pillar-card { padding-top: 232px !important; }
+  }
+}
+
+/* The About section (outside the scope above) keeps its original styling. */
+
+/* ==========================================================================
+   HERO — "above the clouds"
+   Light, airy composition: a bright sea of clouds, centred headline, a dark
+   private jet gliding through the cloud layer, small floating photo cards on
+   both sides, a faint giant watermark behind the jet and a round scroll button.
+   ========================================================================== */
+@keyframes hc-jet-in { from { opacity: 0; transform: translate(-50%, 70px) scale(0.78); } to { opacity: 1; transform: translate(-50%, 0) scale(1); } }
+@keyframes hc-jet-float { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 0 -14px; rotate: -0.6deg; } }
+@keyframes hc-drift { from { background-position: 50% 78%, 50% 60%; } to { background-position: 50% 78%, 54% 58%; } }
+@keyframes hc-card-in { from { opacity: 0; scale: 0.6; } to { opacity: 1; scale: 1; } }
+@keyframes hc-bob-a { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes hc-bob-b { 0%, 100% { translate: 0 0; } 50% { translate: 0 10px; } }
+@keyframes hc-fog { from { background-position: 0 100%, 30% 100%, 70% 100%, 100% 100%, 0 0; } to { background-position: 6% 100%, 24% 100%, 76% 100%, 94% 100%, 0 0; } }
+@keyframes hc-cue { 0%, 100% { translate: 0 0; } 50% { translate: 0 6px; } }
+
+/* Header: transparent with dark text over the light hero, glass once scrolled */
+html:not(.is-scrolled) body:has(main > .sa-hero:first-child) .p-header {
+  background: transparent !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+  border-bottom-color: rgba(17, 27, 90, 0.06) !important;
+}
+html:not(.is-scrolled) body:has(main > .sa-hero:first-child) .p-header::after { opacity: 0; }
+
+@scope (.sa-page) to (.sa-about) {
+  :scope .sa-hero {
+    --hc-card: clamp(78px, 7vw, 112px);
+    min-height: max(1040px, 100svh);
+    padding: 136px 0 0 !important;
+    align-items: flex-start !important;
+    text-align: center;
+    color: #111b5a !important;
+    background: #f8f5ef !important;
+  }
+
+  /* Sky + clouds (photo replaced by a bright cloud plate; the jet is layered on top) */
+  :scope .sa-hero-media {
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='240'%3E%3Ctext x='50%25' y='200' text-anchor='middle' font-family='Helvetica, Arial, sans-serif' font-size='230' font-weight='300' letter-spacing='18' fill='%230e1440' fill-opacity='0.055'%3ESANATAN%3C/text%3E%3C/svg%3E") 50% 78% / min(1500px, 108vw) auto no-repeat,
+      url('/images/premium/hero-clouds.webp') 50% 60% / cover no-repeat;
+    animation: hc-drift 30s ease-in-out infinite alternate;
+  }
+  :scope .sa-hero-media img { opacity: 0 !important; animation: none !important; }
+
+  /* The jet */
+  :scope .sa-hero-media::before {
+    content: '' !important; position: absolute; z-index: 1;
+    left: 50%; bottom: 160px; top: auto !important;
+    width: min(60vw, 880px); aspect-ratio: 1600 / 435; height: auto !important;
+    background: url('/images/premium/hero-jet.webp') center / contain no-repeat !important;
+    filter: drop-shadow(0 40px 40px rgba(17, 27, 90, 0.28));
+    transform: translate(-50%, 0);
+    animation: hc-jet-in 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both, hc-jet-float 7s ease-in-out 2s infinite !important;
+  }
+  /* Light grade on top for legibility + cloud fog swallowing the jet's belly */
+  :scope .sa-hero-media::after {
+    z-index: 2;
+    background:
+      radial-gradient(28% 70% at 8% 100%, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0) 70%),
+      radial-gradient(30% 60% at 34% 100%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 70%),
+      radial-gradient(30% 60% at 66% 100%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 70%),
+      radial-gradient(28% 70% at 92% 100%, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0) 70%),
+      linear-gradient(180deg, rgba(249, 247, 242, 0.94) 0%, rgba(249, 247, 242, 0.78) 34%, rgba(249, 247, 242, 0.18) 58%, rgba(249, 247, 242, 0) 72%, rgba(251, 250, 246, 0.55) 88%, #fbfaf6 100%) !important;
+    background-size: 60% 34%, 60% 30%, 60% 30%, 60% 34%, 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 100%, 30% 100%, 70% 100%, 100% 100%, 0 0 !important;
+  }
+
+  /* Copy */
+  :scope .sa-hero-content { z-index: 3 !important; }
+  :scope .sa-hero-inner { max-width: 860px !important; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+  :scope .sa-hero-kicker { color: #484e58 !important; letter-spacing: 0.3em; }
+  :scope .sa-hero-kicker::before, :scope .sa-hero-kicker::after { content: ''; width: 34px; height: 1px; background: linear-gradient(90deg, #c0480c, #2940d6); }
+  :scope .sa-hero h1 {
+    color: #111b5a !important; text-shadow: none !important;
+    font-size: clamp(42px, 5.6vw, 88px) !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.045em !important;
+  }
+  :scope .sa-hero h1 :is(em, .sa-serif),
+  :scope .sa-hero h1 :is(em, .sa-serif) .motion-word {
+    background-image: linear-gradient(90deg, #9e380d 0%, #c0480c 30%, #cd4d0d 50%, #c0480c 70%, #9e380d 100%) !important;
+    background-size: 300% 100% !important;
+  }
+  :scope .sa-hero-marathi { color: #a63b0d !important; }
+  :scope .sa-hero-copy { color: #3b414a !important; margin-left: auto; margin-right: auto; max-width: 560px; }
+  :scope .sa-hero-actions { justify-content: center; }
+  :scope .sa-hero .sa-btn-ghost {
+    color: #111b5a !important; border-color: rgba(17, 27, 90, 0.22) !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+  :scope .sa-hero .sa-btn-ghost:hover { border-color: #c0480c !important; }
+  :scope .sa-hero-trust {
+    justify-content: center; margin-top: 26px !important;
+    background: rgba(255, 255, 255, 0.55) !important; border-color: rgba(17, 27, 90, 0.08) !important;
+  }
+  :scope .sa-trust-chip { color: #262d38 !important; background: rgba(255, 255, 255, 0.7) !important; }
+  :scope .sa-trust-chip svg { color: #c0480c !important; }
+
+  /* Floating photo cards */
+  :scope .sa-hero::before, :scope .sa-hero::after, :scope .sa-hero-mandala, :scope .sa-hero-content::after {
+    content: ''; position: absolute; z-index: 3; pointer-events: none;
+    width: var(--hc-card); aspect-ratio: 1; height: auto; border-radius: 16px;
+    border: 4px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 24px 40px -18px rgba(17, 27, 90, 0.45);
+    background-size: cover; background-position: center;
+    opacity: 1 !important; transform: none !important;
+  }
+  :scope .sa-hero::before { display: block !important; background: url('/images/sa-jet-tarmac.webp') center / cover no-repeat !important; left: 17%; top: 50%; offset-path: none !important; animation: hc-card-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1s both, hc-bob-a 7s ease-in-out 1.9s infinite !important; }
+  :scope .sa-hero::after { display: block !important; background: url('/images/india/agra-taj-classic.webp') center / cover no-repeat !important; left: 9%; top: 63%; width: calc(var(--hc-card) * 1.1); offset-path: none !important; filter: none !important; animation: hc-card-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.15s both, hc-bob-b 8s ease-in-out 2s infinite !important; }
+  :scope .sa-hero-mandala {
+    display: block !important; inset: auto !important; right: 17% !important; top: 49% !important; color: transparent;
+    background: url('/images/india/kerala-backwaters.webp') center / cover no-repeat;
+    animation: hc-card-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.3s both, hc-bob-b 7.5s ease-in-out 2.1s infinite !important;
+  }
+  :scope .sa-hero-mandala > * { display: none !important; }
+  :scope .sa-hero-content::after { right: 8%; top: calc(100% + 10px); width: calc(var(--hc-card) * 1.1); background: url('/images/sa-helicopter-himalaya.webp') center / cover no-repeat; animation: hc-card-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.45s both, hc-bob-a 8.5s ease-in-out 2.2s infinite; }
+
+  /* Round scroll button */
+  :scope .sa-hero-scroll {
+    left: 50% !important; translate: -50% 0; bottom: 70px !important;
+    flex-direction: column; gap: 10px !important;
+    color: #484e58 !important; z-index: 4;
+  }
+  :scope .sa-hero-scroll span {
+    order: -1; width: 58px !important; height: 58px !important; border-radius: 50%;
+    background: #111b5a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M6 13l6 6 6-6'/%3E%3C/svg%3E") center / 20px no-repeat !important;
+    box-shadow: 0 16px 30px -12px rgba(17, 27, 90, 0.6);
+    animation: hc-cue 2.4s ease-in-out infinite;
+  }
+  :scope .sa-hero-scroll span::after { display: none; }
+
+  @media (max-width: 900px) {
+    :scope .sa-hero { padding-top: 130px !important; min-height: 1000px; }
+    :scope .sa-hero::before, :scope .sa-hero::after, :scope .sa-hero-mandala, :scope .sa-hero-content::after { display: none !important; }
+    :scope .sa-hero-media::before { width: 128vw; bottom: 110px; }
+    :scope .sa-hero-trust { border-radius: 22px; }
+  }
+}

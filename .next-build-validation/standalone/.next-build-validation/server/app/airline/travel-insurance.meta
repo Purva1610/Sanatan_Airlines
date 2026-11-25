@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/travel-insurance/layout,_N_T_/airline/travel-insurance/page,_N_T_/airline/travel-insurance"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/travel-insurance/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c2bf2d7282baa9e925e62566885490012cab9bb609262d35fe8dfce16c6416af/$/airline/travel-insurance",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/travel-insurance/page"
+    },
+    "isFallback": false
+  }
+}

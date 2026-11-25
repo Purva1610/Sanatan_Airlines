@@ -1,0 +1,152 @@
+# Full stack: nginx entry point, Next.js frontend, Express API and MySQL.
+# Start with: docker compose up -d --build
+# Open http://localhost (or the EC2 public address) on HTTP_PORT.
+# The defaults below are for local evaluation only; replace every secret and
+# review docs/lead-capture.md before using this stack in production.
+
+name: sanatan
+
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: sanatan-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_dev_password}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-sanatan}
+      MYSQL_USER: ${MYSQL_USER:-sanatan}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-sanatan_dev_password}
+    ports:
+      - "127.0.0.1:${MYSQL_PORT:-3316}:3306"
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  migrate:
+    image: sanatan-api:local
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    command: ["node", "scripts/migrate.mjs"]
+    environment:
+      NODE_ENV: production
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      MYSQL_USER: ${MYSQL_USER:-sanatan}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-sanatan_dev_password}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-sanatan}
+      IP_HASH_SECRET: ${IP_HASH_SECRET:-local-dev-ip-hash-secret-change-me-0123456789}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    image: sanatan-api:local
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: sanatan-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "4000"
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      MYSQL_USER: ${MYSQL_USER:-sanatan}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-sanatan_dev_password}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-sanatan}
+      SITE_URL: ${SITE_URL:-}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      ADMIN_API_TOKEN: ${ADMIN_API_TOKEN:-local-admin-token-change-me-32chars}
+      IP_HASH_SECRET: ${IP_HASH_SECRET:-local-dev-ip-hash-secret-change-me-0123456789}
+      TRUST_PROXY: ${TRUST_PROXY:-1}
+      UPLOAD_DIR: uploads/cv
+      CLAMAV_HOST: ${CLAMAV_HOST:-}
+      CLAMAV_PORT: ${CLAMAV_PORT:-3310}
+    ports:
+      - "127.0.0.1:${API_PORT:-4000}:4000"
+    volumes:
+      - uploads:/app/server/uploads
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  web:
+    image: sanatan-web:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SITE_URL: ${SITE_URL:-}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+        NEXT_PUBLIC_LEAD_API_URL: ${NEXT_PUBLIC_LEAD_API_URL:-/api/leads}
+        NEXT_PUBLIC_PRIVACY_POLICY_APPROVED: ${NEXT_PUBLIC_PRIVACY_POLICY_APPROVED:-false}
+        NEXT_PUBLIC_WHATSAPP_NUMBER: ${NEXT_PUBLIC_WHATSAPP_NUMBER:-}
+        NEXT_PUBLIC_CONTACT_PHONE: ${NEXT_PUBLIC_CONTACT_PHONE:-}
+        NEXT_PUBLIC_CONTACT_EMAIL: ${NEXT_PUBLIC_CONTACT_EMAIL:-}
+        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${NEXT_PUBLIC_GA_MEASUREMENT_ID:-}
+        NEXT_PUBLIC_CONFIRMED_DESTINATIONS: ${NEXT_PUBLIC_CONFIRMED_DESTINATIONS:-[]}
+        ENABLE_HSTS: ${ENABLE_HSTS:-false}
+    container_name: sanatan-web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      SITE_URL: ${SITE_URL:-}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+      NEXT_PUBLIC_CONTACT_PHONE: ${NEXT_PUBLIC_CONTACT_PHONE:-}
+      NEXT_PUBLIC_CONTACT_EMAIL: ${NEXT_PUBLIC_CONTACT_EMAIL:-}
+      NEXT_PUBLIC_WHATSAPP_NUMBER: ${NEXT_PUBLIC_WHATSAPP_NUMBER:-}
+      AI_ASSISTANT_ENABLED: ${AI_ASSISTANT_ENABLED:-true}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_BASE_URL: ${AI_BASE_URL:-https://api.openai.com/v1}
+      AI_MODEL: ${AI_MODEL:-gpt-4o-mini}
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: sanatan-nginx
+    restart: unless-stopped
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      # - "${HTTPS_PORT:-443}:443"       # uncomment with nginx/tls.conf.example
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      # - ./nginx/certs:/etc/nginx/certs:ro   # uncomment for TLS
+      # - certbot-webroot:/var/www/certbot    # uncomment for certbot HTTP-01
+    depends_on:
+      web:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mysql-data:
+  uploads:

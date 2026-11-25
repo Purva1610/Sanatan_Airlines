@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/airline/layout,_N_T_/airline/round-the-world/layout,_N_T_/airline/round-the-world/page,_N_T_/airline/round-the-world"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/airline/round-the-world/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c947b99cbb497952e8cb3c940e0ff64b2481f0c61b4c4acd6c2b22676d4cb299/$/airline/round-the-world",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/airline/round-the-world/page"
+    },
+    "isFallback": false
+  }
+}
